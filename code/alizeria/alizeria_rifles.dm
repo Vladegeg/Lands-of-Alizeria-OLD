@@ -1,5 +1,5 @@
 /obj/item/gun/ballistic/revolver/grenadelauncher/aliz/rifle
-	name = "rifle"
+	name = "luxery rifle"
 	desc = "Роскошная винтовка, поставляемая независимой частной оружейной организацией Гриммшталя. Скорость полёта пули выше, шанс осечки минимален. Выбор профессионалов."
 	icon = 'icons/roguetown/weapons/ranged64.dmi'
 	icon_state = "rifle0"
@@ -245,7 +245,7 @@
 
 /obj/projectile/bullet/reusable/mpyla
 	name = "пуля"
-	damage = 140
+	damage = 200
 	damage_type = BRUTE
 	armor_penetration = 100
 	icon = 'icons/roguetown/weapons/ammo.dmi'

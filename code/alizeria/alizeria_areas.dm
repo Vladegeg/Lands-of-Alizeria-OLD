@@ -70,6 +70,40 @@
 	first_time_text = "√Œ–Œƒ"
 	town_area = TRUE
 
+/area/rogue/outdoors/alizeria/avangardalt
+	name = "town"
+	icon = 'icons/roguetown/alizeria/areas.dmi'
+	icon_state = "town"
+	converted_type = /area/rogue/indoors/shelter/alizeria/jan
+	first_time_text = "¿¬¿Õ√¿–ƒ"
+	town_area = TRUE
+	ambientsounds = null
+	ambientnight = null
+	spookysounds = null
+	cold_system = TRUE
+	spookynight = SPOOKY_FOREST
+	droning_sound = 'sound/alizeria/areas/icelandmorning.ogg'
+	droning_sound_dawn = 'sound/alizeria/areas/iceland.ogg'
+	droning_sound_dusk = 'sound/alizeria/areas/icelandevening.ogg'
+	droning_sound_night = 'sound/alizeria/areas/icelandnight.ogg'
+	soundenv = 30
+
+/area/rogue/outdoors/alizeria/hotsprings
+	name = "town"
+	icon = 'icons/roguetown/alizeria/areas.dmi'
+	icon_state = "town"
+	converted_type = /area/rogue/indoors/shelter/alizeria/jan
+	first_time_text = "√Œ–ﬂ◊»≈ »—“Œ◊Õ» »"
+	town_area = TRUE
+	ambientsounds = null
+	ambientnight = null
+	spookysounds = null
+	spookynight = SPOOKY_FOREST
+	droning_sound = 'sound/music/area/forest.ogg'
+	droning_sound_dusk = 'sound/music/area/septimus.ogg'
+	droning_sound_night = 'sound/music/area/forestnight.ogg'
+	soundenv = 30
+
 /area/rogue/indoors/shelter/alizeria/town
 	icon_state = "town_in"
 	icon = 'icons/roguetown/alizeria/areas.dmi'

@@ -1,9 +1,9 @@
 /datum/advclass/miner
 	name = "Miner"
-	tutorial = "Взмахни киркой. Удар. Взмах. Удар. Глубоко под землёй, где дни теряют смысл, работа изнурительная, туннели тесные, а спёртый воздух полон угольной пыли, но ходят легенды о тех немногих счастливчиках, кто выдержал и нашёл достаточно драгоценных камней, чтобы обеспечить себя на всю жизнь." 
+	tutorial = "Взмахни киркой. Удар. Взмах. Удар. Глубоко под землёй, где дни теряют смысл, работа изнурительная, туннели тесные, а спёртый воздух полон угольной пыли, но ходят легенды о тех немногих счастливчиках, кто выдержал и нашёл достаточно драгоценных камней, чтобы обеспечить себя на всю жизнь."
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/miner
 
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
@@ -47,7 +47,7 @@
 	backpack_contents = list(
 						/obj/item/flint = 1,
 						/obj/item/flashlight/flare/torch = 1,
-						/obj/item/rogueweapon/chisel = 1, 
+						/obj/item/rogueweapon/chisel = 1,
 						/obj/item/rogueweapon/hammer/wood = 1,
 						/obj/item/recipe_book/survival = 1,
 						/obj/item/recipe_book/builder = 1,

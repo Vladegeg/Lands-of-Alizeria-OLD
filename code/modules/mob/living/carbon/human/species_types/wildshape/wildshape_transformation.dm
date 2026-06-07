@@ -7,7 +7,7 @@
 /mob/living/carbon/human/proc/wildshape_transformation(shapepath)
 	if(!mind)
 		log_runtime("NO MIND ON [src.name] WHEN TRANSFORMING")
-	
+
 	// Store who is grabbing us before transformation
 	var/list/grab_data = list() // List of lists: list(grabber, grab_state, tackle_status, was_lying)
 	for(var/obj/item/grabbing/G in src.grabbedby)
@@ -16,7 +16,7 @@
 			if(G.grabbee.buckled_mobs && (src in G.grabbee.buckled_mobs))
 				tackle_status = TRUE
 			grab_data += list(list(G.grabbee, G.grab_state, tackle_status, src.lying))
-	
+
 	Paralyze(1, ignore_canstun = TRUE)
 
 	//before we shed our items, save our neck and ring, if we have any, so we can quickly rewear them
@@ -46,7 +46,7 @@
 	if (W.dna.species?.gibs_on_shapeshift)
 		playsound(W, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
 		W.spawn_gibs(FALSE)
-	
+
 	playsound(W, 'sound/body/shapeshift-start.ogg', 100, FALSE, 3)
 	src.forceMove(W)
 
@@ -70,13 +70,30 @@
 	W.voice_color = voice_color
 	W.cmode_music_override = cmode_music_override
 	W.cmode_music_override_name = cmode_music_override_name
-	
+
 	// Transfer devotion datum directly to wildshape form so they can transform back
 	// Must be done BEFORE mind.transfer_to() to avoid context issues
-	var/mob/living/carbon/human/H = src
-	W.devotion = H.devotion
-	
+	var/datum/devotion/stored_devotion = devotion
+	var/has_cleric = (locate(/mob/living/carbon/human/proc/devotionreport) in verbs)
+	var/has_priest = (locate(/mob/living/carbon/human/proc/change_miracle_set) in verbs)
 	mind.transfer_to(W)
+	W.devotion = stored_devotion
+	if(W.devotion)
+		W.devotion.holder = W
+		W.hud_used?.initialize_bloodpool()
+		W.hud_used?.bloodpool?.set_fill_color("#3C41A4")
+		W.hud_used?.bloodpool?.set_value(1, 1)
+	if(has_cleric)
+		W.verbs += /mob/living/carbon/human/proc/devotionreport
+		W.verbs += /mob/living/carbon/human/proc/clericpray
+	if(has_priest)
+		W.verbs += /mob/living/carbon/human/proc/coronate_lord
+		W.verbs += /mob/living/carbon/human/proc/churchexcommunicate
+		W.verbs += /mob/living/carbon/human/proc/churchannouncement
+		W.verbs += /mob/living/carbon/human/proc/churchpriestcurse
+		W.verbs += /mob/living/carbon/human/proc/churcheapostasy
+		W.verbs += /mob/living/carbon/human/proc/completesermon
+		W.verbs += /mob/living/carbon/human/proc/change_miracle_set
 	skills?.known_skills = list()
 	skills?.skill_experience = list()
 	W.grant_language(/datum/language/beast)
@@ -88,17 +105,17 @@
 	invisibility = oldinv
 
 	W.gain_inherent_skills()
-	
+
 	// Restore grabs - make grabbers grab the new wildshape form with same state
 	for(var/list/grab_info in grab_data)
 		var/mob/living/grabber = grab_info[1]
 		var/grab_level = grab_info[2]
 		var/was_tackled = grab_info[3]
 		var/was_lying = grab_info[4]
-		
+
 		if(grabber && !grabber.stat)
 			grabber.start_pulling(W)
-			
+
 			// Restore grab level
 			var/obj/item/grabbing/new_grab = grabber.get_active_held_item()
 			if(!istype(new_grab))
@@ -117,7 +134,7 @@
 		return
 	if(!mind)
 		log_runtime("NO MIND ON [src.name] WHEN UNTRANSFORMING")
-	
+
 	// Store who is grabbing us before untransformation
 	var/list/grab_data = list()
 	for(var/obj/item/grabbing/G in src.grabbedby)
@@ -126,7 +143,7 @@
 			if(G.grabbee.buckled_mobs && (src in G.grabbee.buckled_mobs))
 				tackle_status = TRUE
 			grab_data += list(list(G.grabbee, G.grab_state, tackle_status, src.lying))
-	
+
 	Paralyze(1, ignore_canstun = TRUE)
 
 	// as before, save our worn stuff and prepare to move it back to the mob
@@ -154,7 +171,14 @@
 
 	W.forceMove(get_turf(src))
 
+	var/datum/devotion/stored_devotion = devotion
 	mind.transfer_to(W)
+	W.devotion = stored_devotion
+	if(W.devotion)
+		W.devotion.holder = W
+		W.hud_used?.initialize_bloodpool()
+		W.hud_used?.bloodpool?.set_fill_color("#3C41A4")
+		W.hud_used?.bloodpool?.set_value(1, 1)
 
 	var/mob/living/carbon/human/species/wildshape/WA = src
 	W.copy_known_languages_from(WA.stored_language)
@@ -172,17 +196,17 @@
 	to_chat(W, span_userdanger("I return to my old form."))
 
 	W.stasis = FALSE
-	
+
 	// Restore grabs - make grabbers grab the restored human form with same state
 	for(var/list/grab_info in grab_data)
 		var/mob/living/grabber = grab_info[1]
 		var/grab_level = grab_info[2]
 		var/was_tackled = grab_info[3]
 		var/was_lying = grab_info[4]
-		
+
 		if(grabber && !grabber.stat)
 			grabber.start_pulling(W)
-			
+
 			// Restore grab level
 			var/obj/item/grabbing/new_grab = grabber.get_active_held_item()
 			if(!istype(new_grab))

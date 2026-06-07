@@ -106,3 +106,28 @@
 					/obj/item/ration,
 					/obj/item/ration,
 				)
+
+/datum/supply_pack/rogue/adventure_supplies/flamering
+	name = "Кольцо защиты от огня"
+	cost = 400
+	contains = list(/obj/item/clothing/ring/fireproof)
+
+/datum/supply_pack/rogue/adventure_supplies/lifering
+	name = "Кольцо второго шанса"
+	cost = 600
+	contains = list(/obj/item/clothing/ring/second_chance)
+
+/datum/supply_pack/rogue/adventure_supplies/iceamulet
+	name = "Амулет 'Корень льда'"
+	cost = 250
+	contains = list(/obj/item/clothing/neck/roguetown/alizeria/iceamulet)
+
+/datum/supply_pack/rogue/adventure_supplies/compas
+	name = "Компас несчастий"
+	cost = 100
+	contains = list(/obj/item/compass)
+
+/datum/supply_pack/rogue/adventure_supplies/hotbracers
+	name = "Наруч пламени"
+	cost = 200
+	contains = list(/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers)

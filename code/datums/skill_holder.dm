@@ -25,7 +25,7 @@
 
 /mob/proc/adjust_skillrank_down_to(skill, amt, silent = FALSE)
 	return ensure_skills().adjust_skillrank_down_to(skill, amt, silent)
-	
+
 /mob/proc/print_levels()
 	return ensure_skills().print_levels(src)
 
@@ -62,11 +62,11 @@
 
 /datum/skill_holder/proc/adjust_experience(skill, amt, silent = FALSE, check_apprentice = TRUE)
 	var/datum/skill/S = GetSkillRef(skill)
-	
+
 	// Check if advancement is blocked by missing required traits
 	if(check_apprentice && S.advancement_traits)
 		var/current_level = known_skills[S] || SKILL_LEVEL_NONE
-		
+
 		for(var/level_string in S.advancement_traits)
 			var/required_level = text2num(level_string)
 			// If we're at or past the level that requires the trait, block all XP if trait missing
@@ -78,7 +78,7 @@
 							to_chat(current, span_warning("My [S.name] knowledge feels... blocked. Perhaps I need some natural talent for this."))
 							COOLDOWN_START(src, trait_block_warning, 60 SECONDS)
 						return FALSE // Return FALSE to indicate XP was blocked
-	
+
 	skill_experience[S] = max(0, skill_experience[S] + amt) //Prevent going below 0
 	var/old_level = known_skills[S]
 	switch(skill_experience[S])

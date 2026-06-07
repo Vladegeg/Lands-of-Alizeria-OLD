@@ -2,7 +2,7 @@
 	name = "Carpenter"
 	tutorial = "Ты умелый плотник, способный управлять деревом по своему усмотрению — строить крепости и склады, настилать полы, устанавливать кресты. Ты можешь сделать всё это, имея достаточно брёвен."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/carpenter
 	subclass_social_rank = SOCIAL_RANK_YEOMAN
 
@@ -19,12 +19,12 @@
 
 	subclass_skills = list(
 		/datum/skill/combat/axes = SKILL_LEVEL_APPRENTICE, // They use hammers, sawes and axes all day.
-		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE, 
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT, 
+		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE, 
+		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN, // They work at great heights.
 		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN,

@@ -167,6 +167,9 @@ GLOBAL_LIST_INIT(avangard_positions, list(
 	"Dark Witch",
 	"Noble Tailor",
 	"Magician",
+	"Huntsman",
+	"Hired Servant",
+	"Storyteller",
 ))
 
 GLOBAL_LIST_INIT(job_assignment_order, get_job_assignment_order())

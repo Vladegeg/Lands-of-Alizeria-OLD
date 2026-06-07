@@ -2,7 +2,7 @@
 	name = "Sentinel"
 	tutorial = "Ты — рейнджер, прекрасно знакомый с дикими землями, а также с многолетним опытом выполнения различных поручений в качестве разведчика и телохранителя в районах дикой природы, недоступных для обычных солдат."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/ranger
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
 	class_select_category = CLASS_CAT_RANGER

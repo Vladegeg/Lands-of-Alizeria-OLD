@@ -275,6 +275,9 @@
 #define MASTER			(1<<4)
 #define DARKWITCH		(1<<5)
 #define NOBLETAILOR		(1<<6)
+#define EGER			(1<<7)
+#define ASERVANT		(1<<8)
+#define STORYTELLER		(1<<25)
 
 // ==========================================
 // JOB COLOR DEFINITIONS
@@ -392,6 +395,9 @@
 #define JDO_DARKWITCH 20.5
 #define JDO_NOBLETAILOR 20.6
 #define JDO_MAGICIAN 20.7
+#define JDO_EGER 20.8
+#define JDO_ASERVANT 20.9
+#define JDO_STORYTELLER 99
 
 // COOKING TRADES (27.0 - 27.99)
 #define JDO_COOK 27

@@ -36,6 +36,17 @@
 	if(!owner || QDELETED(owner))
 		return qdel(src)
 
+	// Если существо получило иммунитет, удаляем трекер
+	if(HAS_TRAIT(owner, TRAIT_COLD_IMMUNITY))
+		// Очищаем все эффекты холода перед удалением
+		owner.remove_status_effect(/datum/status_effect/debuff/cold_1)
+		owner.remove_status_effect(/datum/status_effect/debuff/cold_2)
+		owner.remove_status_effect(/datum/status_effect/debuff/cold_3)
+		if(owner.client)
+			owner.client.screen -= /atom/movable/screen/fullscreen/cold
+		owner.cold_tracker = null
+		return qdel(src)
+
 	var/area/current_area = get_area(owner)
 	if(!current_area)
 		return

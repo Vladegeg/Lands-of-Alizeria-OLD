@@ -2,7 +2,7 @@
 	name = "Woodcutter"
 	tutorial = "Ты опытный лесоруб. Вооружённый топором, ты можешь добывать древесину — для себя или для других. Ты также начинающий плотник, так что умеешь гнуть дерево, чтобы сделать некоторые нужные вещи."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/woodcutter
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	traits_applied = list(TRAIT_PEASANTMILITIA)

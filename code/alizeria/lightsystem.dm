@@ -55,8 +55,8 @@ GLOBAL_LIST_EMPTY(alizeria_generators)
 	// CHECK FUEL AND EXTINGUISH IF EMPTY
 	if(on && initial(fueluse) > 0)
 		if(fueluse <= 0)
-			burn_out()
 			on = FALSE
+			burn_out()
 			set_light(l_on = FALSE)
 			toggle_linked_lamps(FALSE)
 			update_icon()
@@ -123,18 +123,24 @@ GLOBAL_LIST_EMPTY(alizeria_generators)
 		addtimer(CALLBACK(src, PROC_REF(trigger_weather)), rand(5,20))
 		return TRUE
 
-/obj/machinery/light/rogue/alizeria/generator/extinguish(skip_sound = FALSE)
+/obj/machinery/light/rogue/alizeria/generator/burn_out(skip_sound = FALSE)
 	if(on)
 		toggle_linked_lamps(FALSE)
+	return ..()
+
+/obj/machinery/light/rogue/alizeria/generator/extinguish(skip_sound = FALSE)
+	if(on)
 		burn_out(skip_sound)
 		on = FALSE
 		set_light(l_on = FALSE)
+		update_icon()
 	..()
 
 /obj/machinery/light/rogue/alizeria/generator/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1)
 	. = ..()
 	if(obj_integrity <= 0)
-		toggle_linked_lamps(FALSE)
+		if(on)
+			extinguish()
 
 /obj/machinery/light/rogue/alizeria/generator/onkick(mob/user)
 	if(isliving(user) && on)

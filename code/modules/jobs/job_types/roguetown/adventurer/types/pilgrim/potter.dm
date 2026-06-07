@@ -2,7 +2,7 @@
 	name = "Potter"
 	tutorial = "Ты умелый ремесленник в обработке керамики и создании из неё множества различных предметов и ценностей, включая стекло."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/potter
 
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
@@ -46,7 +46,7 @@
 
 	backpack_contents = list(
 		/obj/item/natural/clay = 3,
-		/obj/item/natural/clay/glassbatch = 1, 
+		/obj/item/natural/clay/glassbatch = 1,
 		/obj/item/rogueore/coal = 1,
 		/obj/item/roguegear = 1,
 		/obj/item/dye_brush = 1,

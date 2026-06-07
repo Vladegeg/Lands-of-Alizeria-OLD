@@ -29,6 +29,15 @@
 	grid_width = 64
 	grid_height = 96
 
+/obj/item/clothing/suit/roguetown/armor/MiddleClick(mob/user)
+	if(!ishuman(user))
+		return
+	if(flags_inv & HIDE_HEADTOP)
+		flags_inv &= ~HIDE_HEADTOP
+	else
+		flags_inv |= HIDE_HEADTOP
+	user.update_inv_head()
+
 //LIGHT ARMOR//
 
 /obj/item/clothing/suit/roguetown/armor/armordress

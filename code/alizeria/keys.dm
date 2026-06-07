@@ -382,3 +382,34 @@
 
 /obj/item/storage/keyring/alizeria/hcafe
 	keys = list(/obj/item/roguekey/alizeria/hcaffe, /obj/item/roguekey/alizeria/caffe, /obj/item/roguekey/alizeria/courtesan)
+
+///////////////////////////
+/obj/item/roguekey/alizeria/witch
+	name = "ключ ведьмы"
+	desc = "Ключ, открывающий двери в хижину ведьмы."
+	icon_state = "rustkey"
+	lockid = "witch"
+
+/obj/item/roguekey/alizeria/eger
+	name = "ключ егеря"
+	desc = "Ключ, открывающий хижину егерей."
+	icon_state = "brownkey"
+	lockid = "eger"
+
+/obj/item/roguekey/alizeria/master
+	name = "ключ от кузни"
+	desc = "Ключ, открывающий кузню."
+	icon_state = "brownkey"
+	lockid = "portblacksmith"
+
+/obj/item/roguekey/alizeria/ntailor
+	name = "ключ от лавки портного"
+	desc = "Ключ, открывающий лавку портного."
+	icon_state = "ekey"
+	lockid = "ntailor"
+
+/obj/item/roguekey/alizeria/avangservant
+	name = "ключ наёмной служанки"
+	desc = "Ключ, открывающий чердак таверны."
+	icon_state = "ekey"
+	lockid = "servant"

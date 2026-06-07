@@ -7,7 +7,7 @@
 "G" = (/turf/closed/wall/mineral/rogue/wooddark,/area/rogue)
 "K" = (/obj/effect/decal/cleanable/blood,/obj/item/bedsheet/rogue/wool{dir = 1},/turf/open/floor/rogue/ruinedwood/platform,/area/rogue)
 "P" = (/obj/structure/bed/rogue/inn{dir = 1},/turf/open/floor/rogue/ruinedwood/platform,/area/rogue)
-"Q" = (/obj/structure/mineral_door/wood,/turf/open/floor/rogue/concrete,/area/rogue)
+"Q" = (/obj/structure/mineral_door/wood{lockid = "troom1"; locked = 1; name = "Дешёвая комната"},/turf/open/floor/rogue/concrete,/area/rogue)
 "T" = (/obj/structure/fluff/walldeco/rpainting{pixel_y = -32},/obj/structure/chair/stool/rogue,/turf/open/floor/rogue/ruinedwood/platform,/area/rogue)
 "V" = (/obj/machinery/light/rogue/wallfire/candle{pixel_x = -26; pixel_y = 0},/obj/structure/closet/crate/drawer,/turf/open/floor/rogue/ruinedwood/platform,/area/rogue)
 

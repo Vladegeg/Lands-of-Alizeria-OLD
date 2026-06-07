@@ -1,5 +1,5 @@
 
-/mob/living/proc/run_armor_check(def_zone = null, attack_flag = "blunt", absorb_text = null, soften_text = null, armor_penetration, penetrated_text, damage, blade_dulling, peeldivisor, intdamfactor, used_weapon = null)
+/mob/living/proc/run_armor_check(def_zone = null, attack_flag = "blunt", absorb_text = null, soften_text = null, armor_penetration, penetrated_text, damage, blade_dulling, peeldivisor, intdamfactor, used_weapon)
 	var/armor = getarmor(def_zone, attack_flag, damage, armor_penetration, blade_dulling, peeldivisor, intdamfactor, used_weapon)
 
 	//the if "armor" check is because this is used for everything on /living, including humans
@@ -61,7 +61,7 @@
 		if(!apply_damage(P.damage, P.damage_type, def_zone, armor))
 			nodmg = TRUE
 			next_attack_msg += " <span class='warning'>Armor stops the damage.</span>"
-		apply_effects(stun = P.stun, knockdown = P.knockdown, unconscious = P.unconscious, slur = P.slur, stutter = P.stutter, eyeblur = P.eyeblur, drowsy = P.drowsy, blocked = armor, stamina = P.stamina, jitter = P.jitter, paralyze = P.paralyze, immobilize = P.immobilize)
+		apply_effects(stun = P.stun, knockdown = P.knockdown, unconscious = P.unconscious, slur = P.slur, stutter = P.stutter, eyeblur = P.eyeblur, drowsy = P.drowsy, blocked = armor, stamina = P.stamina)
 		if(!nodmg)
 			if(P.dismemberment)
 				check_projectile_dismemberment(P, def_zone,armor)
@@ -224,25 +224,27 @@
 	else if(!user.cmode && cmode)
 		combat_modifier -= 0.3
 
-	var/probby
-	if(!compliance)
-		probby = clamp((((4 + (((user.STASTR - STASTR)/2) + skill_diff)) * 10 + rand(-5, 5)) * combat_modifier), 5, 95)
-	else
-		probby = 100
-
-	if(!prob(probby) && !instant && !stat)
-		visible_message(span_warning("[user] struggles with [src]!"),
-						span_warning("[user] struggles to restrain me!"), span_hear("I hear aggressive shuffling!"), null, user)
-		if(src.client?.prefs.showrolls)
-			to_chat(user, span_warning("I struggle with [src]! [probby]%"))
+	// Only perform resistance check if the target is in combat mode
+	if(cmode)
+		var/probby
+		if(!compliance)
+			probby = clamp((((4 + (((user.STASTR - STASTR)/2) + skill_diff)) * 10 + rand(-5, 5)) * combat_modifier), 5, 95)
 		else
-			to_chat(user, span_warning("I struggle with [src]!"))
-		playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
-		user.Immobilize(2 SECONDS)
-		user.changeNext_move(2 SECONDS)
-		src.Immobilize(1 SECONDS)
-		src.changeNext_move(1 SECONDS)
-		return
+			probby = 100
+
+		if(!prob(probby) && !instant && !stat)
+			visible_message(span_warning("[user] struggles with [src]!"),
+							span_warning("[user] struggles to restrain me!"), span_hear("I hear aggressive shuffling!"), null, user)
+			if(src.client?.prefs.showrolls)
+				to_chat(user, span_warning("I struggle with [src]! [probby]%"))
+			else
+				to_chat(user, span_warning("I struggle with [src]!"))
+			playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+			user.Immobilize(2 SECONDS)
+			user.changeNext_move(2 SECONDS)
+			src.Immobilize(1 SECONDS)
+			src.changeNext_move(1 SECONDS)
+			return
 
 	if(!instant)
 		var/sound_to_play = 'sound/foley/grab.ogg'

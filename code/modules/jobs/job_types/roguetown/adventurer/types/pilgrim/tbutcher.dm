@@ -2,7 +2,7 @@
 	name = "Butcher"
 	tutorial = "Одни говорят, что ты странный тип, другие что ты поехавший, а третьи считают тебя гением в искусстве изготовления сосисок. Без твоих умелых рук и работы с ножом большая часть скотины в округе пропадала бы зря."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/butcher
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	traits_applied = list(TRAIT_PEASANTMILITIA)

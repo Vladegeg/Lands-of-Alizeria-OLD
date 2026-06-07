@@ -47,6 +47,7 @@
 	ADD_TRAIT(src, TRAIT_ANTIMAGIC, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_BIGGUY, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_COLD_IMMUNITY, TRAIT_GENERIC)
 	equipOutfit(new /datum/outfit/job/human/species/human/northern/nkboss)
 	gender = pick(MALE, FEMALE)
 	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes)

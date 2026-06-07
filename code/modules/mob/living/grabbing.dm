@@ -189,7 +189,7 @@
 
 	if(user.cmode && !M.cmode)
 		combat_modifier += 0.3
-	
+
 	else if(!user.cmode && M.cmode)
 		combat_modifier -= 0.3
 
@@ -308,7 +308,7 @@
 							pincount = 0
 							qdel(src)
 							break
-						M.Stun(stun_dur - pincount * 2)	
+						M.Stun(stun_dur - pincount * 2)
 						M.Immobilize(stun_dur)	//Made immobile for the whole do_after duration, though
 						user.stamina_add(rand(1,3) + abs(skill_diff) + stun_dur / 1.5)
 						M.visible_message(span_danger("[user] keeps [M] pinned to the ground!"))
@@ -322,13 +322,21 @@
 							span_userdanger("[user] pins me to the ground!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE)
 			else
 				user.stamina_add(rand(5,15))
-				if(M.compliance || prob(clamp((((4 + (((user.STASTR - M.STASTR)/2) + skill_diff)) * 10 + rand(-5, 5)) * combat_modifier), 5, 95)))
+				// Only perform shove resistance check if the target is in combat mode
+				if(M.cmode)
+					if(M.compliance || prob(clamp((((4 + (((user.STASTR - M.STASTR)/2) + skill_diff)) * 10 + rand(-5, 5)) * combat_modifier), 5, 95)))
+						M.visible_message(span_danger("[user] shoves [M] to the ground!"), \
+										span_userdanger("[user] shoves me to the ground!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE)
+						M.Knockdown(max(10 + (skill_diff * 2), 1))
+					else
+						M.visible_message(span_warning("[user] tries to shove [M]!"), \
+										span_danger("[user] tries to shove me!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE)
+				else
+					// If not in combat mode, always shove them down without resistance message
 					M.visible_message(span_danger("[user] shoves [M] to the ground!"), \
 									span_userdanger("[user] shoves me to the ground!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE)
 					M.Knockdown(max(10 + (skill_diff * 2), 1))
-				else
-					M.visible_message(span_warning("[user] tries to shove [M]!"), \
-									span_danger("[user] tries to shove me!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE)
+
 
 /obj/item/grabbing/proc/twistlimb(mob/living/user) //implies limb_grabbed and sublimb are things
 	var/mob/living/carbon/C = grabbed
@@ -339,17 +347,17 @@
 	if(isdoll(C)) {
 		armor_block = C.getarmor(sublimb_grabbed, "blunt")
 		if(armor_block < 1)
-			
+
 		else
-		
+
 			C.apply_damage(damage, BRUTE, limb_grabbed, armor_block)
 	}
 	else {
-	
+
 		armor_block = C.run_armor_check(limb_grabbed, "slash")
 		C.apply_damage(damage, BRUTE, limb_grabbed, armor_block)
-	}	
-		
+	}
+
 	limb_grabbed.bodypart_attacked_by(BCLASS_TWIST, damage, user, sublimb_grabbed, crit_message = TRUE)
 	C.visible_message(span_danger("[user] twists [C]'s [parse_zone(sublimb_grabbed)]![C.next_attack_msg.Join()]"), \
 					span_userdanger("[user] twists my [parse_zone(sublimb_grabbed)]![C.next_attack_msg.Join()]"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE, user)
@@ -368,7 +376,7 @@
 	if(limb_grabbed.body_zone == sublimb_grabbed && isdoll(C))
 		var/mob/living/carbon/human/target = C
 		armor_block = target.getarmor(sublimb_grabbed, "slash")
-		
+
 		if(armor_block >= 1)
 			target.visible_message(span_danger("[target]'s [parse_zone(sublimb_grabbed)] fails to be twisted off!"), \
 				span_danger("[user] Tries to twist my [parse_zone(sublimb_grabbed)] out of it's socket but the armor keeps it in place!"))
@@ -380,7 +388,7 @@
 		to_chat(user, span_warning("I begin popping [target]'s [parse_zone(sublimb_grabbed)] out of socket."))
 
 		var/delay = (sublimb_grabbed == BODY_ZONE_HEAD) ? 100 : 6
-		
+
 		if(do_after(user, delay, target = target))
 			target.visible_message(span_danger("[target]'s [parse_zone(sublimb_grabbed)] has been popped out of socket!"), \
 				span_userdanger("My [parse_zone(sublimb_grabbed)] has been popped out of socket!"))
@@ -393,7 +401,7 @@
 
 			qdel(src)
 			user.put_in_active_hand(limb_grabbed)
-      
+
   // Dealing damage to the head beforehand is intentional.
 	if(limb_grabbed.body_zone == BODY_ZONE_HEAD && isdullahan(C))
 		var/mob/living/carbon/human/target = C
@@ -421,7 +429,7 @@
 
 			qdel(src)
 			user.put_in_active_hand(limb_grabbed)
-      
+
 /obj/item/grabbing/proc/headbutt(mob/living/carbon/human/H)
 	var/mob/living/carbon/C = grabbed
 	var/obj/item/bodypart/Chead = C.get_bodypart(BODY_ZONE_HEAD)

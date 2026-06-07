@@ -2,7 +2,7 @@
 	name = "Seamster"
 	tutorial = "Ты знаешь своё ремесло так, как игла проходит через ткань и кожу. Шей и чини одежду для горожан: пальто, штаны, шляпы, капюшоны и многое другое. Ну и что, если ты завышаешь цену? Это ведь ты причина того, что все вообще хорошо выглядят."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/seamstress
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	traits_applied = list(TRAIT_DYES, TRAIT_PEASANTMILITIA)

@@ -1,0 +1,22 @@
+"a" = (/turf/open/floor/rogue/snowpatchy,/area/rogue/outdoors/woods/alizeria/iceland)
+"b" = (/turf/open/floor/rogue/twig,/area/rogue/outdoors/woods/alizeria/iceland)
+"g" = (/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"i" = (/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"j" = (/obj/structure/bed/rogue/shit,/turf/open/floor/rogue/twig,/area/rogue/outdoors/woods/alizeria/iceland)
+"k" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snowpatchy,/area/rogue/outdoors/woods/alizeria/iceland)
+"y" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"E" = (/turf/closed/wall/mineral/rogue/tent{dir = 1},/area/rogue/outdoors/woods/alizeria/iceland)
+"F" = (/obj/structure/roguetent,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"J" = (/turf/closed/wall/mineral/rogue/tent{dir = 4},/area/rogue/outdoors/woods/alizeria/iceland)
+"M" = (/obj/structure/closet/crate/chest/neu,/obj/effect/spawner/lootdrop/helmet_spawner,/obj/effect/spawner/lootdrop/light_armor_spawner,/turf/open/floor/rogue/twig,/area/rogue/outdoors/woods/alizeria/iceland)
+"Q" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"R" = (/turf/closed/wall/mineral/rogue/tent,/area/rogue/outdoors/woods/alizeria/iceland)
+"Y" = (/turf/closed/wall/mineral/rogue/tent{dir = 8},/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+yRgiy
+JjQgY
+JkbgF
+JbMbY
+aEEEk
+"}

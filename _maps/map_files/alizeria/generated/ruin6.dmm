@@ -1,0 +1,22 @@
+"a" = (/obj/structure/fluff/railing/fence,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"g" = (/obj/structure/fermentation_keg/random/beer,/turf/open/floor/rogue/snowpatchy,/area/rogue/outdoors/woods/alizeria/iceland)
+"j" = (/obj/structure/handcart,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"s" = (/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"u" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"y" = (/obj/structure/chair/stool/rogue,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"A" = (/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"C" = (/turf/open/floor/rogue/snowpatchy,/area/rogue/outdoors/woods/alizeria/iceland)
+"I" = (/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"L" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"M" = (/obj/machinery/light/rogue/campfire/densefire,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"P" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"S" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon/food,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"U" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snowpatchy,/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+AgSIA
+CLCuj
+UyMyP
+IPsuI
+uaaaA
+"}

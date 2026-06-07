@@ -2,7 +2,7 @@
 	name = "Battlemaster"
 	tutorial = "You are a seasoned weapon specialist, clad in maille, with years of experience in warfare and battle under your belt."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/sfighter
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
 	class_select_category = CLASS_CAT_WARRIOR
@@ -111,16 +111,16 @@
 			H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, SKILL_LEVEL_EXPERT, TRUE)
 			beltr = /obj/item/rogueweapon/katar
 		if("Axe")
-			H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_JOURNEYMAN, TRUE)			
+			H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			beltr = /obj/item/rogueweapon/stoneaxe/boneaxe
 		if("Sword")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			beltr = /obj/item/rogueweapon/sword/short
 		if("Club")
-			H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_JOURNEYMAN, TRUE)			
+			H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			beltr = /obj/item/rogueweapon/mace/woodclub
 		if("Spear")
-			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)			
+			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			r_hand = /obj/item/rogueweapon/spear/bonespear
 		if ("MY BARE HANDS!!!")
 			H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, SKILL_LEVEL_EXPERT, TRUE)
@@ -235,14 +235,14 @@
 
 /datum/outfit/job/adventurer/monster_hunter/pre_equip(mob/living/carbon/human/H)
 	H.cmode_music = 'sound/music/inquisitorcombat.ogg'
-	if(HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT)) 
+	if(HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT))
 		backl = /obj/item/storage/backpack/rogue/satchel/otavan
 	else
 		backl = /obj/item/storage/backpack/rogue/satchel/black
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver //there's no silver crosses of the ten so we just give everyone a psicross
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq //drippy, doesn't cover legs. Could be psydon-locked but the normal paddy gamby covers legs which is too much for an adv imo
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/steel
-	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots //not actually blacksteel 
+	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots //not actually blacksteel
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	gloves = /obj/item/clothing/gloves/roguetown/angle
 	backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1, /obj/item/recipe_book/survival = 1)
@@ -250,7 +250,7 @@
 		cloak = /obj/item/clothing/cloak/psydontabard
 	else
 		cloak = /obj/item/clothing/cloak/cape/puritan
-	//miracles 
+	//miracles
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T0, passive_gain = FALSE, devotion_limit = (CLERIC_REQ_1 - 20))
 	var/armor = list("Dodge Expert + Studded Leathers", "Cuirass + Rotbite Immune")
@@ -549,7 +549,7 @@
 			H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)			
+			H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -594,7 +594,7 @@
 			H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)			
+			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)

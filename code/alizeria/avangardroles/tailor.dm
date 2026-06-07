@@ -74,7 +74,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	backpack_contents = list(
 		/obj/item/needle,
-		/obj/item/storage/keyring/tailor,
+		/obj/item/roguekey/alizeria/ntailor,
 		/obj/item/dye_brush,
 		/obj/item/recipe_book/sewing,
 		/obj/item/book/rogue/swatchbook,

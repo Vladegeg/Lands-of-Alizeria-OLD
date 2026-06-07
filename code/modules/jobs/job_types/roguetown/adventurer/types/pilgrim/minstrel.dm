@@ -2,7 +2,7 @@
 	name = "Minstrel"
 	tutorial = "В отличие от тех так называемых «бардов», которые расхаживают в нарядных одеждах и фехтуют в лесах, ты следуешь призванию истинного музыканта. Тебе просто... ещё предстоит найти благодарную аудиторию."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/minstrel
 	category_tags = list(CTAG_TOWNER)
 

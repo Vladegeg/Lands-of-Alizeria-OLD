@@ -33,7 +33,7 @@ GLOBAL_LIST_EMPTY(virtues)
 	var/custom_text
 	/// Required virtues before this virtue can be selected.
 	var/list/required_virtues = list()
-	var/uniquefaith
+	var/datum/faith/uniquefaith
 
 /datum/virtue/New()
 	. = ..()
@@ -67,7 +67,7 @@ GLOBAL_LIST_EMPTY(virtues)
 				recipient.adjust_skillrank(the_skill.type, increase_by, TRUE)
 			else
 				to_chat(recipient, span_notice("My Virtue cannot influence my skill with [lowertext(the_skill.name)] any further."))
-				
+
 
 /datum/virtue/proc/handle_stashed_items(mob/living/carbon/human/recipient)
 	if (!recipient.mind || !LAZYLEN(added_stashed_items))
@@ -78,14 +78,14 @@ GLOBAL_LIST_EMPTY(virtues)
 /datum/virtue/proc/handle_added_languages(mob/living/carbon/human/recipient)
 	if (!LAZYLEN(added_languages))
 		return
-	
+
 	for (var/language in added_languages)
 		recipient.grant_language(language)
 
 /datum/virtue/proc/handle_stats(mob/living/carbon/human/recipient)
 	if (!LAZYLEN(added_stats))
 		return
-	
+
 	for (var/stat in added_stats)
 		var/value = added_stats[stat]
 		recipient.change_stat(stat, value)
@@ -93,10 +93,10 @@ GLOBAL_LIST_EMPTY(virtues)
 /datum/virtue/proc/check_triumphs(mob/living/carbon/human/recipient)
 	if (!triumph_cost)
 		return TRUE
-	
+
 	if (!recipient.mind)
 		return FALSE
-	
+
 	// we should check to see if they have triumphs first but i can't be fucked
 	recipient.adjust_triumphs(-triumph_cost, FALSE)
 	return TRUE

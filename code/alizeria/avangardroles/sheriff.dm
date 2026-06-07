@@ -81,7 +81,7 @@
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/signal_horn = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/signal_horn = 1, /obj/item/roguekey/alizeria/town = 1, /obj/item/roguekey/alizeria/townh = 1)
 
 	if(H.mind)
 		H.verbs |= list(/mob/living/carbon/human/proc/elder_announcement)

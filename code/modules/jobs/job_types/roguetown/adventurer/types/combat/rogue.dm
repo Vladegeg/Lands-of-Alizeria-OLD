@@ -2,7 +2,7 @@
 	name = "Treasure Hunter"
 	tutorial = "Ты — расхититель могил. Умеешь отличать богатые могилы от не очень."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/rogue
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
 	class_select_category = CLASS_CAT_ROGUE
@@ -50,8 +50,8 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backpack_contents = list(
-		/obj/item/lockpick = 1, 
-		/obj/item/rogueweapon/huntingknife = 1, 
+		/obj/item/lockpick = 1,
+		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/recipe_book/survival = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)

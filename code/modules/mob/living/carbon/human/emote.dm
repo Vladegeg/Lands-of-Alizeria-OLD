@@ -214,3 +214,238 @@
 			span_biginfo("<span style='color:#[H.voice_color];text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>[H]</b></span></span><span style='color: #c9c1ba;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'> flaps [H.p_their()] wings no more, as [H.p_they()] is back on the ground!</span>"),
 			runechat_message = "stops flapping [H.p_their()] wings!"
 		)
+
+/mob/living/carbon/human/verb/hand_games()
+	set name = "Handgames"
+	set desc = "Challenge another to a variety of handgames, which can either be done while standing next to each other or while across a table."
+	set category = "Emotes"
+
+	if(stat)
+		return
+
+	if((!hand_bodyparts.len))
+		to_chat(src, span_warning("You have no hands to play games with!"))
+		return
+
+	var/list/nearby = list()
+	for(var/mob/living/carbon/human/H in range(src,1))
+		if(H.stat)
+			continue
+		if(H == src)
+			continue
+		if(!H.hand_bodyparts.len)
+			continue
+		nearby |= H
+	for(var/obj/structure/table/T in range(src, 1))
+		for(var/mob/living/carbon/human/H in range(T,1))
+			if(H.stat)
+				continue
+			if(H == src)
+				continue
+			if(!H.hand_bodyparts.len)
+				continue
+			nearby |= H
+
+	if(!nearby.len)
+		to_chat(src, span_warning("Здесь не с кем играть!"))
+
+	var/partner = tgui_input_list(src, "С кем будем играть?", "FRIEND TO FOE.", nearby)
+	if(!partner)
+		return
+	var/choose_game = tgui_alert(src, "В какую игру будем играть с [partner]?", "A TOURNAMENT FOR TWO.", list("Камень, ножницы, бумага", "Армрестлинг", "Ладушки", "Битва больших пальцев", "Я передмал"))
+
+	if(!choose_game || (choose_game == "Я передмал"))
+		return
+
+	if(choose_game == "Камень, ножницы, бумага")
+		game_rps(src,partner)
+
+	if(choose_game == "Армрестлинг")
+		game_armwrestle(src,partner)
+
+	if(choose_game == "Ладушки")
+		game_slaphands(src,partner)
+
+	if(choose_game == "Битва больших пальцев")
+		game_thumbwars(src,partner)
+
+// Checks to make sure everything is fine to continue playing.
+
+/mob/living/carbon/human/proc/hand_games_check(var/mob/living/carbon/human/player1, var/mob/living/carbon/human/player2)
+	if(!istype(player1) || !istype(player2))
+		return 0
+	if(player1.stat || player2.stat) //Make sure they're still standing.
+		return 0
+	if(!(player2 in range(player1,2))) //Make sure they're within two spaces still; should allow for cross-table gaming.
+		return 0
+
+	return 1
+
+///// A simple game of Rock Paper Scissors, each player chooses an option and the choices are declared simultaneously.
+
+/mob/living/carbon/human/proc/game_rps(var/mob/living/carbon/human/player1, var/mob/living/carbon/human/player2)
+	if(!hand_games_check(player1,player2))
+		return
+	to_chat(player1, span_notice("Спрашиваем [player2] хочет ли сыграть в 'Камень, ножницы, бумага'..."))
+	var/playgame = tgui_alert(player2, "[player1] хочет сыграть в 'Камень, ножницы, бумага'.", "FORTUNE FAVORS THE WITFUL.", list("Играть", "Отказаться"))
+	if(!playgame || (playgame == "Отказаться"))
+		to_chat(player1, span_warning("[player2] отказывается от игры."))
+		return
+	else
+		player1.visible_message(span_notice("[player1] бросает вызов [player2] в 'Камень, ножницы, бумага'!"))
+		to_chat(player2, span_warning("[player1] думает..."))
+		var/choice1 = tgui_alert(player1, "Что выбросим?", "DEAL YOUR HAND.", list("Камень", "Бумага", "Ножницы", "Отменить"))
+		if(choice1 == "Отменить")
+			player1.visible_message(span_notice("[player1] бежит от игры!"))
+		if(!hand_games_check(player1,player2))
+			return
+		to_chat(player1, span_warning("[player2] думает..."))
+		var/choice2 = tgui_alert(player2, "Что выбросим?", "DEAL YOUR HAND.", list("Камень", "Бумага", "Ножницы", "Отменить"))
+		if(choice2 == "Отменить")
+			player2.visible_message(span_notice("[player2] бежит от игры!"))
+		if(!hand_games_check(player1,player2))
+			return
+		if(choice1 == choice2)
+			player1.visible_message(span_notice("[player1] и [player2] выбирают [choice1], ничья!"))
+		else
+			player1.visible_message(span_notice("[player1] выбирает [choice1]!"))
+			player2.visible_message(span_notice("[player2] выбирает [choice2]!"))
+
+/////// Armwrestling! Each player gets a modifier based on their size and can choose the strength of their character, then a weighted roll is made.
+
+/mob/living/carbon/human/proc/game_armwrestle(var/mob/living/carbon/human/player1, var/mob/living/carbon/human/player2)
+	if(!hand_games_check(player1,player2))
+		return
+	to_chat(player1, span_notice("Спрашиваем [player2] хочет ли сыграть в 'Армрестлинг'..."))
+	var/playgame = tgui_alert(player2, "[player1] хочет сыграть в 'Армрестлинг'.", "TEST YOUR MIGHT.", list("Играть", "Отказаться"))
+	if(!playgame || (playgame == "Отказаться"))
+		to_chat(player1, span_warning("[player2] отказывается от игры."))
+		return
+	else
+		if(!hand_games_check(player1,player2))
+			return
+		player1.visible_message(span_notice("[player1] бросает вызов [player2] в 'Армрестлинг'!"))
+
+	var/p1_str = player1.STASTR
+	var/p2_str = player2.STASTR
+	var/winner = 0
+	var/rounds = 14
+
+	for(var/i = 1 to rounds)
+
+		// Has to remain valid, each round.
+		if(!hand_games_check(player1, player2))
+			return
+		// Channel / Struggle moment.
+		if(!do_after(player1, 1 SECONDS, target = player2))
+			player1.visible_message(span_notice("Игра была прервана!"))
+			return
+		// Range check to make sure.
+		if(get_dist(player1, player2) > 2)
+			player1.visible_message(span_warning("Вы находитесь слишком далеко друг от друга!"))
+			return
+
+		var/still_near_table = FALSE
+		// Both players must remain near a table.
+		for(var/obj/structure/table/T in range(player1, 1))
+			if(player2 in range(T, 1))
+				still_near_table = TRUE
+				break
+
+		if(!still_near_table)
+			player1.visible_message(span_warning("Соревнования по армрестлингу прерываются, когда участники покидают стол!"))
+			return
+
+		//Strength-based stamina damage.
+		var/damage_to_p2 = 10 + max(1, p1_str - p2_str)
+		var/damage_to_p1 = 10 + max(1, p2_str - p1_str)
+
+		player2.stamina_add(damage_to_p2)
+		player1.stamina_add(damage_to_p1)
+		// If both players have the same amount of STR, then they'll deal around 11 stamina damage per loop.
+
+		var/p1_exhausted = player1.stamina >= player1.max_stamina	//var for when stamina damage goes above max stam
+		var/p2_exhausted = player2.stamina >= player2.max_stamina
+
+		if(p1_exhausted && p2_exhausted)	//Matched exhaustion.
+			winner = 3
+			break
+		else if(p1_exhausted)	//Player 2's triumph.
+			winner = 2
+			break
+		else if(p2_exhausted)	//Player 1's triumph.
+			winner = 1
+			break
+
+	if(winner == 1)
+		player2.Knockdown(20)
+		player1.visible_message(span_notice("[player1] побеждает [player2] в игре!"))
+	else if(winner == 2)
+		player1.Knockdown(20)
+		player1.visible_message(span_notice("[player2] побеждает [player1] в игре!"))
+	else if(winner == 3)
+		player1.Knockdown(20)
+		player2.Knockdown(20)
+		player1.visible_message(span_notice("Оба игрока падают от истощения!"))
+	else
+		player1.visible_message(span_notice("Соревнования по армрестлингу закончились ничьей!"))
+
+/////// Slaphands! Each player gets a modifier based on their size and can choose the reaction time of their character, then a weighted roll is made. This one gives the advantage to smaller players.
+
+/mob/living/carbon/human/proc/game_slaphands(var/mob/living/carbon/human/player1, var/mob/living/carbon/human/player2)
+	if(!hand_games_check(player1,player2))
+		return
+	to_chat(player1, span_notice("Спрашиваем [player2] хочет ли сыграть в 'Ладушки'..."))
+	var/playgame = tgui_alert(player2, "[player1] хочет сыграть в 'Ладушки'.", "QUICKEST TO THE DRAW.", list("Принять", "Отказаться"))
+	if(!playgame || (playgame == "Отказаться"))
+		to_chat(player1, span_warning("[player2] отказывается от игры."))
+		return
+	else
+		if(!hand_games_check(player1,player2))
+			return
+		player1.visible_message(span_notice("[player1] бросает вызов [player2] в 'Ладушки'!"))
+		var/speed1 = player1.get_stat(STAT_SPEED)
+		var/speed2 = player2.get_stat(STAT_SPEED)
+		var/per1 = player1.get_stat(STAT_PERCEPTION)
+		var/per2 = player2.get_stat(STAT_PERCEPTION)
+		if(!hand_games_check(player1,player2))
+			return
+
+		var/score1 = (speed1 + per1)
+		var/score2 = (speed2 + per2)
+
+		var/competition = pick(score1;player1, score2;player2)
+		if(!do_after(player1, 3 SECONDS, target = player2))
+			player2.visible_message(span_notice("Игра отменена!"))
+			return 0
+		if(!hand_games_check(player1,player2))
+			return
+		playsound(player1, 'sound/foley/slap.ogg', 30, 1)
+		if(competition == player1)
+			player1.visible_message(span_notice("[player1] успевает отшлёпать руку [player2] прежде, чем тот успевает среагировать!"))
+		else
+			player2.visible_message(span_notice("[player2] успевает отшлёпать руку [player1] прежде, чем тот успевает среагировать!"))
+
+///// Thumbwars! This one is pure chance, and - in a pinch - can essentially work like a cointoss.
+
+/mob/living/carbon/human/proc/game_thumbwars(var/mob/living/carbon/human/player1, var/mob/living/carbon/human/player2)
+	if(!hand_games_check(player1,player2))
+		return
+	to_chat(player1, span_notice("Спрашиваем [player2] хочет ли сыграть в 'Битва больших пальцев'..."))
+	var/playgame = tgui_alert(player2, "[player1] хочет сыграть в 'Битва больших пальцев'.", "ONE, TWO, THREE, FOUR..", list("Принять", "Отказаться"))
+	if(!playgame || (playgame == "Отказаться"))
+		to_chat(player1, span_warning("[player2] отказывается от игры."))
+		return
+	else
+		if(!hand_games_check(player1,player2))
+			return
+		player1.visible_message(span_notice("[player1] бросает вызов [player2] в 'Битва больших пальцев'!"))
+		if(!do_after(player1, 5 SECONDS, target = player2))
+			player2.visible_message(span_notice("Игра была прервана!!"))
+			return 0
+		if(!hand_games_check(player1,player2))
+			return
+		if(prob(50))
+			player1.visible_message(span_notice("После короткой битвы, [player1] удаётся положить свой большой палец на палец [player2]!"))
+		else
+			player2.visible_message(span_notice("После короткой битвы, [player2] удаётся положить свой большой палец на палец [player1]!"))

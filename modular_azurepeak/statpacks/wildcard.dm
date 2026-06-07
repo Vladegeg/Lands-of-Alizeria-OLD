@@ -60,6 +60,11 @@
 	desc = "Меня никогда не привлекали какие-то там знания. Меня вообще мало что привлекало, кроме драк."
 	stat_array = list(STAT_STRENGTH = 4, STAT_PERCEPTION = -3, STAT_INTELLIGENCE = -4, STAT_CONSTITUTION = 2, STAT_ENDURANCE = 1, STAT_SPEED = -2, STAT_FORTUNE = -2)
 
+/datum/statpack/alizeriag/terpilla
+	name = "Терпила"
+	desc = "Всю жизнь я терпел, ныл и плакал из-за своей ущербности. Вряд ли я даже стал от этого как-то сильнее. Даже боги отвернулись от меня, глядя на то, какой я жалкий."
+	stat_array = list(STAT_STRENGTH = -2, STAT_INTELLIGENCE = -1, STAT_CONSTITUTION = 3, STAT_ENDURANCE = 3, STAT_SPEED = -2, STAT_FORTUNE = -2)
+
 /datum/statpack/alizeriag/genius
 	name = "Гений"
 	desc = "С детства я был одарён великим умом. К сожалению, во всём остальном кроме науки - я не сыскал успехов."
@@ -105,6 +110,11 @@
 	desc = "Лишь богам дозволено решить мою судьбу."
 	stat_array = list(STAT_STRENGTH = list(-5, 5), STAT_PERCEPTION = list(-5, 5), STAT_INTELLIGENCE = list(-5, 5), STAT_CONSTITUTION = list(-5, 5), STAT_ENDURANCE = list(-5, 5), STAT_SPEED = list(-5, 5), STAT_FORTUNE = list(-5, 5))
 
+/*/datum/statpack/alizeriag/myccenik
+	name = "Мученник"
+	desc = "Я одна большая шутка для богов."
+	stat_array = list(STAT_STRENGTH = list(-10, 10), STAT_PERCEPTION = list(-10, 10), STAT_INTELLIGENCE = list(-10, 10), STAT_CONSTITUTION = list(-10, 10), STAT_ENDURANCE = list(-10, 10), STAT_SPEED = list(-10, 10), STAT_FORTUNE = list(-10, 10))
+*/
 /datum/statpack/alizeria/none
 	name = "Серость"
 	desc = "В детстве я абсолютно ничем не выделялся и ни к чему не стремился."

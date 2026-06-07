@@ -1,7 +1,7 @@
 /obj/item/clothing/suit/roguetown/armor/alizeria/jandarms/chief/armor
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "marshall gendarmes dress"
-	desc = "Укреплённое, роскошное платье маршалла жандармов. Красиво и практично."
+	desc = "РЈРєСЂРµРїР»С‘РЅРЅРѕРµ, СЂРѕСЃРєРѕС€РЅРѕРµ РїР»Р°С‚СЊРµ РјР°СЂС€Р°Р»Р»Р° Р¶Р°РЅРґР°СЂРјРѕРІ. РљСЂР°СЃРёРІРѕ Рё РїСЂР°РєС‚РёС‡РЅРѕ."
 	body_parts_covered = COVERAGE_VEST
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -33,7 +33,7 @@
 /obj/item/clothing/suit/roguetown/armor/alizeria/jandarms/patrol/armor
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "gendarmes' patrol skirt"
-	desc = "Простая юбка жандармерии, с повешанной стальной кирасой. Используется патрульными."
+	desc = "РџСЂРѕСЃС‚Р°СЏ СЋР±РєР° Р¶Р°РЅРґР°СЂРјРµСЂРёРё, СЃ РїРѕРІРµС€Р°РЅРЅРѕР№ СЃС‚Р°Р»СЊРЅРѕР№ РєРёСЂР°СЃРѕР№. РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РїР°С‚СЂСѓР»СЊРЅС‹РјРё."
 	body_parts_covered = COVERAGE_VEST
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -58,7 +58,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/library
 	name = "librarian's dress"
-	desc = "Простенькое платье библиотекаря. Кажется местами чудом сохраняется пыль, как не пытаться её убирать."
+	desc = "РџСЂРѕСЃС‚РµРЅСЊРєРѕРµ РїР»Р°С‚СЊРµ Р±РёР±Р»РёРѕС‚РµРєР°СЂСЏ. РљР°Р¶РµС‚СЃСЏ РјРµСЃС‚Р°РјРё С‡СѓРґРѕРј СЃРѕС…СЂР°РЅСЏРµС‚СЃСЏ РїС‹Р»СЊ, РєР°Рє РЅРµ РїС‹С‚Р°С‚СЊСЃСЏ РµС‘ СѓР±РёСЂР°С‚СЊ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "library"
@@ -75,7 +75,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/alizeria/jandarms/jandarm
 	name = "the uniform of a gendarme"
-	desc = "Строгая и практичная униформа жандармов. Покрыта лёгкими, но прочными пластинами."
+	desc = "РЎС‚СЂРѕРіР°СЏ Рё РїСЂР°РєС‚РёС‡РЅР°СЏ СѓРЅРёС„РѕСЂРјР° Р¶Р°РЅРґР°СЂРјРѕРІ. РџРѕРєСЂС‹С‚Р° Р»С‘РіРєРёРјРё, РЅРѕ РїСЂРѕС‡РЅС‹РјРё РїР»Р°СЃС‚РёРЅР°РјРё."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "jandararmor"
@@ -95,7 +95,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/jandarms/instructor
 	name = "instructor's vest"
-	desc = "Качественный жилет инструктора жандармерии. Красив, но никак не защищает владельца."
+	desc = "РљР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ Р¶РёР»РµС‚ РёРЅСЃС‚СЂСѓРєС‚РѕСЂР° Р¶Р°РЅРґР°СЂРјРµСЂРёРё. РљСЂР°СЃРёРІ, РЅРѕ РЅРёРєР°Рє РЅРµ Р·Р°С‰РёС‰Р°РµС‚ РІР»Р°РґРµР»СЊС†Р°."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "instructor"
@@ -110,7 +110,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/jandarms/studyone
 	name = "academic's robe"
-	desc = "Роба учеников академии жандармов. Выглядит весьма дёшево."
+	desc = "Р РѕР±Р° СѓС‡РµРЅРёРєРѕРІ Р°РєР°РґРµРјРёРё Р¶Р°РЅРґР°СЂРјРѕРІ. Р’С‹РіР»СЏРґРёС‚ РІРµСЃСЊРјР° РґС‘С€РµРІРѕ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "studyone"
@@ -125,7 +125,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/jandarms/studytwo
 	name = "academician's vest"
-	desc = "Жилет учеников академии жандармов. Выглядит весьма дёшево."
+	desc = "Р–РёР»РµС‚ СѓС‡РµРЅРёРєРѕРІ Р°РєР°РґРµРјРёРё Р¶Р°РЅРґР°СЂРјРѕРІ. Р’С‹РіР»СЏРґРёС‚ РІРµСЃСЊРјР° РґС‘С€РµРІРѕ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "studytwo"
@@ -141,7 +141,7 @@
 
 /obj/item/clothing/under/roguetown/tights/alizeria/jandarms/instructor
 	name = "officer's trousers"
-	desc = "Строгие брюки офицера жандармерии."
+	desc = "РЎС‚СЂРѕРіРёРµ Р±СЂСЋРєРё РѕС„РёС†РµСЂР° Р¶Р°РЅРґР°СЂРјРµСЂРёРё."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "inspants"
@@ -150,7 +150,7 @@
 
 /obj/item/clothing/under/roguetown/tights/alizeria/jandarms/studypants
 	name = "academician's trousers"
-	desc = "Обычные брюки академика жандармерии. Кажется проделать им дырку возможно даже пальцем."
+	desc = "РћР±С‹С‡РЅС‹Рµ Р±СЂСЋРєРё Р°РєР°РґРµРјРёРєР° Р¶Р°РЅРґР°СЂРјРµСЂРёРё. РљР°Р¶РµС‚СЃСЏ РїСЂРѕРґРµР»Р°С‚СЊ РёРј РґС‹СЂРєСѓ РІРѕР·РјРѕР¶РЅРѕ РґР°Р¶Рµ РїР°Р»СЊС†РµРј."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "studypants"
@@ -159,7 +159,7 @@
 
 /obj/item/clothing/gloves/roguetown/alizeria/noblegloves
 	name = "noble gloves"
-	desc = "Роскошные перчатки, которые часто носят дворяне. Тяжело стираются."
+	desc = "Р РѕСЃРєРѕС€РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё, РєРѕС‚РѕСЂС‹Рµ С‡Р°СЃС‚Рѕ РЅРѕСЃСЏС‚ РґРІРѕСЂСЏРЅРµ. РўСЏР¶РµР»Рѕ СЃС‚РёСЂР°СЋС‚СЃСЏ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "noblegloves"
@@ -184,7 +184,7 @@
 
 /obj/item/clothing/cloak/jandarms/cief
 	name = "coat of the marshall"
-	desc = "Роскошный плащ, что хорошо греет владельца."
+	desc = "Р РѕСЃРєРѕС€РЅС‹Р№ РїР»Р°С‰, С‡С‚Рѕ С…РѕСЂРѕС€Рѕ РіСЂРµРµС‚ РІР»Р°РґРµР»СЊС†Р°."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "ciefcoat"
@@ -201,7 +201,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/jandarms/jandarm
 	name = "helmet of a gendarme"
-	desc = "Обычный шлем кавалериста. В меру защищает голову и уши носителя."
+	desc = "РћР±С‹С‡РЅС‹Р№ С€Р»РµРј РєР°РІР°Р»РµСЂРёСЃС‚Р°. Р’ РјРµСЂСѓ Р·Р°С‰РёС‰Р°РµС‚ РіРѕР»РѕРІСѓ Рё СѓС€Рё РЅРѕСЃРёС‚РµР»СЏ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "janhelmet"
@@ -212,7 +212,7 @@
 
 /obj/item/clothing/head/roguetown/jandarms/cief
 	name = "cap of gendarmes"
-	desc = "В меру строгая фуражка шефа жандармов."
+	desc = "Р’ РјРµСЂСѓ СЃС‚СЂРѕРіР°СЏ С„СѓСЂР°Р¶РєР° С€РµС„Р° Р¶Р°РЅРґР°СЂРјРѕРІ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "ciefhat"
@@ -222,7 +222,7 @@
 /obj/item/clothing/shoes/roguetown/boots/jandarms/cief
 	name = "luxury boots"
 	//dropshrink = 0.75
-	desc = "Роскошные сапоги шефа жандармов. Ими убили не одного смерда."
+	desc = "Р РѕСЃРєРѕС€РЅС‹Рµ СЃР°РїРѕРіРё С€РµС„Р° Р¶Р°РЅРґР°СЂРјРѕРІ. РРјРё СѓР±РёР»Рё РЅРµ РѕРґРЅРѕРіРѕ СЃРјРµСЂРґР°."
 	gender = PLURAL
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -237,7 +237,7 @@
 
 /obj/item/clothing/cloak/jandarms/jandarm
 	name = "the cloak of the gendarmes"
-	desc = "Качественный плащ, способный уберечь владельца от дождя и грязи."
+	desc = "РљР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ РїР»Р°С‰, СЃРїРѕСЃРѕР±РЅС‹Р№ СѓР±РµСЂРµС‡СЊ РІР»Р°РґРµР»СЊС†Р° РѕС‚ РґРѕР¶РґСЏ Рё РіСЂСЏР·Рё."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "jancoat"
@@ -253,7 +253,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/jacket/alizeria/necromist/coat
 	name = "necromist coat"
-	desc = "Мрачное пальто из странной на ощуп кожи."
+	desc = "РњСЂР°С‡РЅРѕРµ РїР°Р»СЊС‚Рѕ РёР· СЃС‚СЂР°РЅРЅРѕР№ РЅР° РѕС‰СѓРї РєРѕР¶Рё."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "necromistcoat"
@@ -268,7 +268,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/priarmor
 	name = "priestess's robe"
-	desc = "Роскошная роба жрицы. Выглядит в меру богато, и в меру бедно."
+	desc = "Р РѕСЃРєРѕС€РЅР°СЏ СЂРѕР±Р° Р¶СЂРёС†С‹. Р’С‹РіР»СЏРґРёС‚ РІ РјРµСЂСѓ Р±РѕРіР°С‚Рѕ, Рё РІ РјРµСЂСѓ Р±РµРґРЅРѕ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "priarmor"
@@ -286,7 +286,7 @@
 /obj/item/clothing/shoes/roguetown/boots/jandarms/priboots
 	name = "priestess's boots"
 	//dropshrink = 0.75
-	desc = "Роскошные сапоги жрицы. Чудом не пачкаются в грязи."
+	desc = "Р РѕСЃРєРѕС€РЅС‹Рµ СЃР°РїРѕРіРё Р¶СЂРёС†С‹. Р§СѓРґРѕРј РЅРµ РїР°С‡РєР°СЋС‚СЃСЏ РІ РіСЂСЏР·Рё."
 	gender = PLURAL
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -314,7 +314,7 @@
 
 /obj/item/clothing/gloves/roguetown/alizeria/necrogloves
 	name = "necromist gloves"
-	desc = "Роскошные перчатки от которых несёт трупным запахом."
+	desc = "Р РѕСЃРєРѕС€РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё РѕС‚ РєРѕС‚РѕСЂС‹С… РЅРµСЃС‘С‚ С‚СЂСѓРїРЅС‹Рј Р·Р°РїР°С…РѕРј."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "necrogloves"
@@ -336,7 +336,7 @@
 /obj/item/clothing/suit/roguetown/armor/alizeria/jandarms/chief/jacket
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "jacket of the marshall"
-	desc = "Роскошная куртка шефа жандармов."
+	desc = "Р РѕСЃРєРѕС€РЅР°СЏ РєСѓСЂС‚РєР° С€РµС„Р° Р¶Р°РЅРґР°СЂРјРѕРІ."
 	body_parts_covered = COVERAGE_VEST
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -367,7 +367,7 @@
 
 /obj/item/clothing/cloak/jandarms/cief/alt
 	name = "mastall half-cloak"
-	desc = "Роскошный полуплащ шефа жандармов. Носит более декоративный характер, нежели практичный."
+	desc = "Р РѕСЃРєРѕС€РЅС‹Р№ РїРѕР»СѓРїР»Р°С‰ С€РµС„Р° Р¶Р°РЅРґР°СЂРјРѕРІ. РќРѕСЃРёС‚ Р±РѕР»РµРµ РґРµРєРѕСЂР°С‚РёРІРЅС‹Р№ С…Р°СЂР°РєС‚РµСЂ, РЅРµР¶РµР»Рё РїСЂР°РєС‚РёС‡РЅС‹Р№."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "ciefcoatalt"
@@ -384,7 +384,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/whorearmor
 	name = "oriental bra"
-	desc = "Восточный вульгарный лифчик. Пользуется популярностью среди шлюх."
+	desc = "Р’РѕСЃС‚РѕС‡РЅС‹Р№ РІСѓР»СЊРіР°СЂРЅС‹Р№ Р»РёС„С‡РёРє. РџРѕР»СЊР·СѓРµС‚СЃСЏ РїРѕРїСѓР»СЏСЂРЅРѕСЃС‚СЊСЋ СЃСЂРµРґРё С€Р»СЋС…."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "whorearmor"
@@ -401,7 +401,7 @@
 /obj/item/clothing/shoes/roguetown/boots/whoreboots
 	name = "golden sandals"
 	//dropshrink = 0.75
-	desc = "Позолоченные сандали. Выглядят дорого, но для владельца весьма неудобны."
+	desc = "РџРѕР·РѕР»РѕС‡РµРЅРЅС‹Рµ СЃР°РЅРґР°Р»Рё. Р’С‹РіР»СЏРґСЏС‚ РґРѕСЂРѕРіРѕ, РЅРѕ РґР»СЏ РІР»Р°РґРµР»СЊС†Р° РІРµСЃСЊРјР° РЅРµСѓРґРѕР±РЅС‹."
 	gender = PLURAL
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -416,7 +416,7 @@
 
 /obj/item/clothing/under/roguetown/tights/alizeria/whorepants
 	name = "oriental trousers"
-	desc = "Открытая восточная юбка."
+	desc = "РћС‚РєСЂС‹С‚Р°СЏ РІРѕСЃС‚РѕС‡РЅР°СЏ СЋР±РєР°."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "whorepants"
@@ -426,7 +426,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/maidendress
 	name = "exotic maiden dress"
-	desc = "Роскошное платье служанки. Часто используется слугами знатных господ."
+	desc = "Р РѕСЃРєРѕС€РЅРѕРµ РїР»Р°С‚СЊРµ СЃР»СѓР¶Р°РЅРєРё. Р§Р°СЃС‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ СЃР»СѓРіР°РјРё Р·РЅР°С‚РЅС‹С… РіРѕСЃРїРѕРґ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "maiden"
@@ -442,7 +442,7 @@
 
 /obj/item/clothing/gloves/roguetown/alizeria/maidengloves
 	name = "maiden gloves"
-	desc = "Обычные перчатки служанки. На них виднеются весьма неаккуратные штришки."
+	desc = "РћР±С‹С‡РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё СЃР»СѓР¶Р°РЅРєРё. РќР° РЅРёС… РІРёРґРЅРµСЋС‚СЃСЏ РІРµСЃСЊРјР° РЅРµР°РєРєСѓСЂР°С‚РЅС‹Рµ С€С‚СЂРёС€РєРё."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "maidgloves"
@@ -464,7 +464,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/maidendressu
 	name = "maiden dress"
-	desc = "Обычное платье служанки."
+	desc = "РћР±С‹С‡РЅРѕРµ РїР»Р°С‚СЊРµ СЃР»СѓР¶Р°РЅРєРё."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "maid"
@@ -535,7 +535,7 @@
 /obj/item/clothing/suit/roguetown/armor/alizeria/lord/guard
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "royal cuirass"
-	desc = "Роскошная кираса придворного гвардейца. Возможно защитит от пули."
+	desc = "Р РѕСЃРєРѕС€РЅР°СЏ РєРёСЂР°СЃР° РїСЂРёРґРІРѕСЂРЅРѕРіРѕ РіРІР°СЂРґРµР№С†Р°. Р’РѕР·РјРѕР¶РЅРѕ Р·Р°С‰РёС‚РёС‚ РѕС‚ РїСѓР»Рё."
 	body_parts_covered = COVERAGE_VEST
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -560,7 +560,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/alizeria/guardalt
 	name = "guardian jacket"
-	desc = "Качественный дублет королевской гвардии."
+	desc = "РљР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ РґСѓР±Р»РµС‚ РєРѕСЂРѕР»РµРІСЃРєРѕР№ РіРІР°СЂРґРёРё."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "guardian"
@@ -577,10 +577,10 @@
 	sleevetype = "shirt"
 
 ////////////////////
-// ВЕДЬМА
+// Р’Р•Р”Р¬РњРђ
 /obj/item/clothing/suit/roguetown/shirt/dress/alizeria/witch
 	name = "witch dress"
-	desc = "Мрачное платье ведьмы. Пропитано трупным запахом."
+	desc = "РњСЂР°С‡РЅРѕРµ РїР»Р°С‚СЊРµ РІРµРґСЊРјС‹. РџСЂРѕРїРёС‚Р°РЅРѕ С‚СЂСѓРїРЅС‹Рј Р·Р°РїР°С…РѕРј."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "witchdress"
@@ -596,7 +596,7 @@
 
 /obj/item/clothing/gloves/roguetown/alizeria/witchgloves
 	name = "witch gloves"
-	desc = "Кожаные чёрные перчатки. На них удачно скрывается засохшая кровь."
+	desc = "РљРѕР¶Р°РЅС‹Рµ С‡С‘СЂРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё. РќР° РЅРёС… СѓРґР°С‡РЅРѕ СЃРєСЂС‹РІР°РµС‚СЃСЏ Р·Р°СЃРѕС…С€Р°СЏ РєСЂРѕРІСЊ."
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon_state = "witchgloves"
@@ -618,7 +618,7 @@
 
 /obj/item/clothing/cloak/alizeria/witchcloak
 	name = "witch cloak"
-	desc = "Мрачный плащ ведьмы."
+	desc = "РњСЂР°С‡РЅС‹Р№ РїР»Р°С‰ РІРµРґСЊРјС‹."
 	color = null
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
@@ -654,7 +654,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/alizeria/sheriffhelmet
 	name = "sturdy armet"
-	desc = "Крайне качественный шлем из стали, которую умелые мастера смогли довести до качества чёрностали."
+	desc = "РљСЂР°Р№РЅРµ РєР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ С€Р»РµРј РёР· СЃС‚Р°Р»Рё, РєРѕС‚РѕСЂСѓСЋ СѓРјРµР»С‹Рµ РјР°СЃС‚РµСЂР° СЃРјРѕРіР»Рё РґРѕРІРµСЃС‚Рё РґРѕ РєР°С‡РµСЃС‚РІР° С‡С‘СЂРЅРѕСЃС‚Р°Р»Рё."
 	body_parts_covered = FULL_HEAD
 	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
 	icon = 'icons/roguetown/alizeria/armor.dmi'
@@ -675,7 +675,7 @@
 	icon = 'icons/roguetown/alizeria/armor.dmi'
 	icon_state = "sheriffarmor"
 	item_state = "sheriffarmor"
-	desc = "Крепкие латы, идеальные подогнанные под своего заказчика.."
+	desc = "РљСЂРµРїРєРёРµ Р»Р°С‚С‹, РёРґРµР°Р»СЊРЅС‹Рµ РїРѕРґРѕРіРЅР°РЅРЅС‹Рµ РїРѕРґ СЃРІРѕРµРіРѕ Р·Р°РєР°Р·С‡РёРєР°.."
 
 	equip_delay_self = 10 SECONDS
 	unequip_delay_self = 10 SECONDS
@@ -685,7 +685,7 @@
 
 /obj/item/rogueore/alizeria/insulatedcrystall
 	name = "insulated crystall"
-	desc = "Кристал изолированного хладагента. Некогда являлся 'утерянной' технологией павшей Империи, однако десятилетие назад учёные Монфора смогли воссоздать точную копию подобного артефакта. С тех пор они питают целые города, как когда-то это делали тысячи лет назад."
+	desc = "РљСЂРёСЃС‚Р°Р» РёР·РѕР»РёСЂРѕРІР°РЅРЅРѕРіРѕ С…Р»Р°РґР°РіРµРЅС‚Р°. РќРµРєРѕРіРґР° СЏРІР»СЏР»СЃСЏ 'СѓС‚РµСЂСЏРЅРЅРѕР№' С‚РµС…РЅРѕР»РѕРіРёРµР№ РїР°РІС€РµР№ РРјРїРµСЂРёРё, РѕРґРЅР°РєРѕ РґРµСЃСЏС‚РёР»РµС‚РёРµ РЅР°Р·Р°Рґ СѓС‡С‘РЅС‹Рµ РњРѕРЅС„РѕСЂР° СЃРјРѕРіР»Рё РІРѕСЃСЃРѕР·РґР°С‚СЊ С‚РѕС‡РЅСѓСЋ РєРѕРїРёСЋ РїРѕРґРѕР±РЅРѕРіРѕ Р°СЂС‚РµС„Р°РєС‚Р°. РЎ С‚РµС… РїРѕСЂ РѕРЅРё РїРёС‚Р°СЋС‚ С†РµР»С‹Рµ РіРѕСЂРѕРґР°, РєР°Рє РєРѕРіРґР°-С‚Рѕ СЌС‚Рѕ РґРµР»Р°Р»Рё С‚С‹СЃСЏС‡Рё Р»РµС‚ РЅР°Р·Р°Рґ."
 	icon_state = "orecoal1"
 	firefuel = 30 MINUTES
 	smeltresult = /obj/item/rogueore/alizeria/insulatedcrystall
@@ -702,6 +702,364 @@
 	icon_state = "refrig"
 	loot = list(
 		/obj/item/rogueore/alizeria/insulatedcrystall = 1,
-		null = 3  // 3 пустых слота = 75% шанс ничего не спавнится
+		null = 3  // 3 РїСѓСЃС‚С‹С… СЃР»РѕС‚Р° = 75% С€Р°РЅСЃ РЅРёС‡РµРіРѕ РЅРµ СЃРїР°РІРЅРёС‚СЃСЏ
 	)
 	lootcount = 1
+
+
+
+////////////////////////////////// РњРђР РРЇ
+/obj/item/clothing/suit/roguetown/shirt/dress/alizeria/mariaarmor
+	name = "hunter dress"
+	desc = ""
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "mariaarmor"
+	item_state = "mariaarmor"
+	boobed = TRUE
+	allowed_sex = list(FEMALE)
+	allowed_race = NON_DWARVEN_RACE_TYPES
+	color = null
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	slot_flags = ITEM_SLOT_ARMOR
+	sleeved = 'icons/roguetown/alizeria/armoronmob.dmi'
+	max_integrity = 2000
+	armor = list("blunt" = 200, "slash" = 200, "stab" = 200, "piercing" = 200, "fire" = 200, "acid" = 200)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
+
+/obj/item/clothing/shoes/roguetown/boots/alizeria/mariaboots
+	name = "hunter boots"
+	//dropshrink = 0.75
+	desc = ""
+	gender = PLURAL
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "mariaboots"
+	item_state = "mariaboots"
+	sewrepair = TRUE
+	armor = ARMOR_BOOTS_BAD
+	allowed_sex = list(FEMALE)
+	salvage_amount = 2
+	salvage_result = /obj/item/natural/hide/cured
+	color = null
+	max_integrity = 2000
+	armor = list("blunt" = 200, "slash" = 200, "stab" = 200, "piercing" = 200, "fire" = 200, "acid" = 200)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
+
+/obj/item/clothing/cloak/jandarms/alizeria/mariacloak
+	name = "hunter cloak"
+	desc = ""
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "mariacloak"
+	item_state = "mariacloak"
+	body_parts_covered = CHEST|GROIN|VITALS|ARMS
+	sleeved = 'icons/roguetown/alizeria/armoronmob.dmi'
+	sleevetype = "mariacloak"
+	slot_flags = ITEM_SLOT_CLOAK
+	sellprice = 50
+	nodismemsleeves = TRUE
+	slot_flags = ITEM_SLOT_CLOAK
+	allowed_race = NON_DWARVEN_RACE_TYPES
+	allowed_sex = list(FEMALE)
+	armor = list("blunt" = 200, "slash" = 200, "stab" = 200, "piercing" = 200, "fire" = 200, "acid" = 200)
+	max_integrity = 2000
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
+
+/obj/item/storage/belt/rogue/alizeria/mariabelt
+	name = "hunter belt"
+	desc = ""
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "mariabelt"
+	item_state = "mariabelt"
+	equip_sound = 'sound/blank.ogg'
+	sewrepair = TRUE
+	sellprice = 10
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/under/roguetown/tights/alizeria/mariapants
+	name = "hunter pants"
+	desc = ""
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "mariapants"
+	item_state = "mariapants"
+	allowed_race = NON_DWARVEN_RACE_TYPES
+	armor = list("blunt" = 200, "slash" = 200, "stab" = 200, "piercing" = 200, "fire" = 200, "acid" = 200)
+	max_integrity = 2000
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
+
+/obj/item/clothing/suit/roguetown/shirt/dress/alizeria/mariashirt
+	name = "hunter shirt"
+	desc = ""
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "mariavest"
+	item_state = "mariavest"
+	boobed = TRUE
+	allowed_race = NON_DWARVEN_RACE_TYPES
+	color = null
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	sleeved = 'icons/roguetown/alizeria/armoronmob.dmi'
+	sleevetype = "shirt"
+	armor = list("blunt" = 200, "slash" = 200, "stab" = 200, "piercing" = 200, "fire" = 200, "acid" = 200)
+	max_integrity = 2000
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
+
+/obj/item/clothing/head/mariahat
+	name = "hunter hat"
+	desc = ""
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "mariahat"
+	item_state = "mariahat"
+	armor = list("blunt" = 200, "slash" = 200, "stab" = 200, "piercing" = 200, "fire" = 200, "acid" = 200)
+	max_integrity = 2000
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
+
+/////////////////////////////////////
+/obj/item/clothing/neck/roguetown/alizeria/iceamulet
+	name = "ice root"
+	desc = "'РљРѕСЂРµРЅСЊ Р»СЊРґР°' - РЁСѓС‚РѕС‡РЅРѕРµ РЅР°Р·РІР°РЅРёРµ Р°РјСѓР»РµС‚Р°, РїСѓС‰РµРЅРЅРѕРµ РјР°РіР°РјРё СЃСЂРµРґРё РЅРµР·РЅР°СЋС‰РёС… СЌРєСЃРїРµРґРёС‚РѕСЂРѕРІ. РќРµСЃРјРѕС‚СЂСЏ РЅР° РЅР°Р·РІР°РЅРёРµ - РѕРЅ РІРїРѕР»РЅРµ СЃРµР±Рµ РїСЂРёРјРµРЅРёРј. Р•РіРѕ РЅРѕС€РµРЅРёРµ РјРіРЅРѕРІРµРЅРЅРѕ РЅР°РґРµР»СЏРµС‚ РѕРїС‹С‚РѕРј РІС‹Р¶РёРІР°РЅРёСЏ РІ Р»РµСЃР°С… РѕСЃС‚СЂРѕРІР° Р»СЊРґР° РїРѕРґРѕР±РЅРѕ РїРµСЂРІРѕРїСЂРѕС…РѕРґС†Р°Рј, Р·Р°С‰РёС‰Р°СЏ РѕС‚ РЅРµРѕР¶РёРґР°РЅРЅС‹С… Р·Р°СЃР°Рґ."
+	icon = 'icons/roguetown/alizeria/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/alizeria/armoronmob.dmi'
+	icon_state = "ice_amulet"
+	item_state = "ice_amulet"
+	resistance_flags = FIRE_PROOF
+	sellprice = 100
+	anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/neck/roguetown/alizeria/iceamulet/equipped(mob/user, slot)
+	. = ..()
+	if(slot == SLOT_NECK)
+		ADD_TRAIT(user, TRAIT_AMBUSH_RESISTANT, "iceamulet")
+
+/obj/item/clothing/neck/roguetown/alizeria/iceamulet/dropped(mob/user)
+	. = ..()
+	REMOVE_TRAIT(user, TRAIT_AMBUSH_RESISTANT, "iceamulet")
+
+
+/obj/item/compass
+	name = "compass of misfortunes"
+	desc = "РџСЂРёС‡СѓРґР»РёРІС‹Р№ РєРѕРјРїР°СЃ, СЃРїРѕСЃРѕР±РЅС‹Р№ СѓРєР°Р·Р°С‚СЊ РЅР° СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ Р±Р»РёР¶Р°Р№С€РёС… Р»РѕРІСѓС€РµРє."
+	icon = 'icons/roguetown/alizeria/items.dmi'
+	icon_state = "compass_stable"
+	w_class = WEIGHT_CLASS_SMALL
+	grid_width = 32
+	grid_height = 32
+	var/last_update = 0
+	var/update_interval = 1 // Update every 0.5 seconds (5 deciseconds)
+	var/detection_range = 5
+
+/obj/item/compass/Initialize(mapload)
+	. = ..()
+	START_PROCESSING(SSobj, src)
+
+/obj/item/compass/process()
+	if(world.time < last_update + update_interval)
+		return
+
+	last_update = world.time
+	update_compass_state()
+
+/obj/item/compass/proc/update_compass_state()
+	// Only check when the compass is held or worn
+	if(!ismob(loc))
+		return
+
+	var/mob/holder = loc
+
+	// Find all traps within detection range
+	var/obj/structure/trap/closest_trap = null
+	var/closest_distance = INFINITY
+
+	for(var/obj/structure/trap/T in range(detection_range, holder))
+		if(!T.armed)
+			continue
+
+		var/distance = get_dist(holder, T)
+		if(distance < closest_distance)
+			closest_distance = distance
+			closest_trap = T
+
+	// Update icon based on findings
+	if(!closest_trap)
+		// No trap in range - use stable compass sprite
+		icon_state = "compass_stable"
+	else
+		// Found a trap - determine direction and set appropriate icon state
+		var/direction = get_dir(holder, closest_trap)
+		var/icon_dir = dir_to_compass_state(direction)
+		icon_state = "compass_target[icon_dir]"
+
+/obj/item/compass/proc/dir_to_compass_state(direction)
+	// Maps BYOND directions to compass sprite directions
+	// compass_target has 8 directions:
+	// dir1 = south, dir2 = southeast, dir3 = east, dir4 = northeast,
+	// dir5 = north, dir6 = northwest, dir7 = west, dir8 = southwest
+
+	switch(direction)
+		if(SOUTH)
+			return 1
+		if(SOUTHEAST)
+			return 2
+		if(EAST)
+			return 3
+		if(NORTHEAST)
+			return 4
+		if(NORTH)
+			return 5
+		if(NORTHWEST)
+			return 6
+		if(WEST)
+			return 7
+		if(SOUTHWEST)
+			return 8
+		else
+			return 1 // Default fallback
+
+/obj/item/compass/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	. = ..()
+
+///////////////////////////////
+/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers
+	name = "bracer of flame"
+	desc = "Р’РѕРµРЅРЅРѕРµ РёР·РѕР±СЂРµС‚РµРЅРёРµ, РЅР° СѓРґРёРІР»РµРЅРёРµ РїСЂСЏРјРёРєРѕРј РёР· РђР»СЊС‚Р°РјРёСЂР°. РћРїС‹С‚РЅС‹Рµ РјР°СЃС‚РµСЂР° Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ РёСЃРїРѕР»СЊР·СѓСЋС‚ РµРіРѕ С‡С‚Рѕ Р±С‹ РїРѕРґР¶РµС‡СЊ РїСЂРѕС‚РёРІРЅРёРєР°, Р»РёР±Рѕ РѕСЃР»РµРїРёС‚СЊ - РїСѓСЃС‚РёРІ РїР»Р°РјСЏ РІ РіР»Р°Р·Р°. РџРёС‚Р°РµС‚СЃСЏ РѕС‚ РјРµР»РєРѕРіРѕ РѕРіРЅРµРЅРЅРѕРіРѕ РєСЂРёСЃС‚Р°Р»Р»Р°, РєРѕС‚РѕСЂС‹Р№ РІС‹ РµСЃС‚РµСЃС‚РІРµРЅРЅРѕ РЅРµ РІРёРґРёС‚Рµ."
+	icon_state = "hotbracer"
+	armor = ARMOR_LEATHER_GOOD
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_CHOP, BCLASS_SMASH)
+	max_integrity = 265
+	salvage_amount = 1
+	salvage_result = /obj/item/natural/hide/cured
+
+	// Cooldown РґР»СЏ РїРѕРґР¶РёРіР°РЅРёСЏ (5 СЃРµРєСѓРЅРґ)
+	var/last_ignite = 0
+	var/ignite_cooldown = 5 SECONDS
+
+	// Cooldown РґР»СЏ РѕСЃР»РµРїР»РµРЅРёСЏ (30 СЃРµРєСѓРЅРґ)
+	var/last_blind = 0
+	var/blind_cooldown = 30 SECONDS
+
+	// РЁР°РЅСЃ РїРѕРґР¶РµС‡СЊ РїСЂРѕС‚РёРІРЅРёРєР° РїСЂРё Р°С‚Р°РєРµ
+	var/ignite_chance = 50
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/equipped(mob/user, slot)
+	. = ..()
+	// Р”РѕР±Р°РІР»СЏРµРј РєРѕРјРїРѕРЅРµРЅС‚ РґР»СЏ РѕС‚СЃР»РµР¶РёРІР°РЅРёСЏ Р°С‚Р°Рє
+	user.AddComponent(/datum/component/hotbracer_flame_proc, src)
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/dropped(mob/user)
+	. = ..()
+	// РЈРґР°Р»СЏРµРј РєРѕРјРїРѕРЅРµРЅС‚
+	var/datum/component/hotbracer_flame_proc/comp = user.GetComponent(/datum/component/hotbracer_flame_proc)
+	if(comp)
+		qdel(comp)
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/proc/attempt_ignite(mob/living/target)
+	// РџСЂРѕРІРµСЂСЏРµРј С€Р°РЅСЃ Рё РєСѓР»РґР°СѓРЅ
+	if(prob(ignite_chance) && world.time >= last_ignite + ignite_cooldown)
+		trigger_ignite(target)
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/proc/trigger_ignite(mob/living/target)
+	if(!isliving(target))
+		return
+
+	last_ignite = world.time
+
+	// РџРѕРґР¶РёРіР°РµРј РїСЂРѕС‚РёРІРЅРёРєР° РєР°Рє РєРѕСЃС‚С‘СЂ (РёСЃРїРѕР»СЊР·СѓСЏ fire_act РєР°Рє РєР°РјРёРЅ)
+	target.fire_act(5)
+
+	// Р—РІСѓРєРѕРІРѕР№ СЌС„С„РµРєС‚
+	playsound(target, 'sound/magic/whiteflame.ogg', 50, TRUE)
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/attack_right(mob/user)
+	. = ..()
+
+	// РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РЅР°СЂСѓС‡ РІ СЂСѓРєРµ РёР»Рё РЅР°РґРµС‚ РЅР° Р·Р°РїСЏСЃС‚СЊСЏ
+	var/in_hand = user.is_holding(src)
+	var/in_wrist_slot = (user.get_item_by_slot(SLOT_WRISTS) == src)
+
+	if(!in_hand && !in_wrist_slot)
+		to_chat(user, span_warning("РќСѓР¶РЅРѕ СЃРїРµСЂРІР° РЅР°РґРµС‚СЊ РµРіРѕ, С‡С‚Рѕ Р±С‹ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ."))
+		return
+
+	if(world.time < last_blind + blind_cooldown)
+		var/time_left = round((last_blind + blind_cooldown - world.time) / 10)
+		to_chat(user, span_warning("РќСѓР¶РЅРѕ РїРѕРґРѕР¶РґР°С‚СЊ [time_left] СЃРµРєСѓРЅРґ С‡С‚Рѕ Р±С‹ РІРЅРѕРІСЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ."))
+		return
+
+	trigger_blind(user)
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/proc/trigger_blind(mob/living/carbon/human/wearer)
+	last_blind = world.time
+
+	// РџРѕР»СѓС‡Р°РµРј С‚РµРєСѓС‰СѓСЋ Р»РѕРєР°С†РёСЋ
+	var/turf/T = get_turf(wearer)
+	if(!T)
+		return
+
+	// РћСЃР»РµРїР»СЏРµРј РІСЃРµС… РІ СЂР°РґРёСѓСЃРµ 1 РєР»РµС‚РєРё (СЃРѕСЃРµРґРЅРёРµ РєР»РµС‚РєРё)
+	for(var/mob/living/L in range(1, wearer))
+		if(L == wearer)
+			continue // РќРµ РѕСЃР»РµРїР»СЏРµРј СЃРµР±СЏ
+
+		// РћСЃР»РµРїР»СЏРµРј Рё РѕРіР»СѓС€Р°РµРј
+		L.blind_eyes(3)
+		L.Stun(2)
+		L.visible_message(
+			span_danger("[L] РѕСЃР»РµРїР»СЏРµС‚СЃСЏ РїР»Р°РјРµРЅРµРј!"),
+			span_userdanger("РЇ РѕСЃР»РµРїР»СЏСЋСЃСЊ РїР»Р°РјРµРЅРµРј!")
+		)
+
+	// Р’РёР·СѓР°Р»СЊРЅС‹Р№ СЌС„С„РµРєС‚ РґР»СЏ РЅРѕСЃРёС‚РµР»СЏ
+	wearer.visible_message(
+		span_danger("РќР°СЂСѓС‡ [wearer] РІСЃРїС‹С…РёРІР°РµС‚ РѕСЃР»РµРїРёС‚РµР»СЊРЅРѕР№ РІСЃРїС‹С€РєРѕР№ РїР»Р°РјРµРЅРё!"),
+		span_notice("РњРѕР№ РЅР°СЂСѓС‡ РІСЃРїС‹С…РёРІР°РµС‚!")
+	)
+
+	// Р—РІСѓРєРѕРІРѕР№ СЌС„С„РµРєС‚
+	playsound(T, 'sound/misc/frying.ogg', 100, TRUE)
+
+
+// ========== РљРћРњРџРћРќР•РќРў Р”Р›РЇ РћРўРЎР›Р•Р–РР’РђРќРРЇ РђРўРђРљ ==========
+
+/datum/component/hotbracer_flame_proc
+	dupe_mode = COMPONENT_DUPE_UNIQUE
+	var/obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/bracer
+
+/datum/component/hotbracer_flame_proc/Initialize(obj/item/clothing/wrists/roguetown/bracers/leather/alizeria/hotbracers/source_bracer)
+	if(!ishuman(parent))
+		return COMPONENT_INCOMPATIBLE
+
+	bracer = source_bracer
+	if(!bracer)
+		return COMPONENT_INCOMPATIBLE
+
+	// РЎР»СѓС€Р°РµРј СѓСЃРїРµС€РЅС‹Рµ Р°С‚Р°РєРё
+	RegisterSignal(parent, COMSIG_MOB_ITEM_ATTACK, PROC_REF(on_mob_attack))
+
+/datum/component/hotbracer_flame_proc/proc/on_mob_attack(datum/source, atom/target, mob/living/user, obj/item/item)
+	SIGNAL_HANDLER
+
+	// РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ Р°С‚Р°РєР° Р±С‹Р»Р° СѓСЃРїРµС€РЅРѕР№ Рё РЅР°СЂСѓС‡ РІСЃРµ РµС‰Рµ РЅР°РґРµС‚
+	if(!bracer || !isliving(target))
+		return
+
+	// РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ СЌС‚Рѕ Р°С‚Р°РєР° РѕСЂСѓР¶РёРµРј Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ (РЅРµ РІС‹СЃС‚СЂРµР» Рё РЅРµ РјР°РіРёСЏ)
+	if(!user.used_intent)
+		return
+
+	// РџСЂРѕРїСѓСЃРєР°РµРј РЅРµРЅСѓР¶РЅС‹Рµ РёРЅС‚РµРЅС‚С‹
+	if(user.used_intent.no_attack)
+		return
+
+	// РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РЅР°СЂСѓС‡ РІСЃРµ РµС‰Рµ РЅР° РІР»Р°РґРµР»СЊС†Рµ
+	if(user.get_item_by_slot(SLOT_WRISTS) != bracer && !user.is_holding(bracer))
+		return
+
+	// РџС‹С‚Р°РµРјСЃСЏ РїРѕРґР¶РµС‡СЊ С†РµР»СЊ
+	bracer.attempt_ignite(target)

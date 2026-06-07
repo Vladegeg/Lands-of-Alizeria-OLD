@@ -1,0 +1,22 @@
+"a" = (/turf/closed/wall/mineral/rogue/decowood,/area/rogue/outdoors/woods/alizeria/iceland)
+"b" = (/turf/open/floor/rogue/ruinedwood/platform,/area/rogue/outdoors/woods/alizeria/iceland)
+"e" = (/obj/effect/decal/cleanable/debris/woody,/obj/structure/closet/crate/chest/wicker,/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry,/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry,/obj/item/reagent_containers/food/snacks/grown/onion/rogue,/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,/turf/open/floor/rogue/ruinedwood/platform,/area/rogue/outdoors/woods/alizeria/iceland)
+"l" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"m" = (/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue/outdoors/woods/alizeria/iceland)
+"p" = (/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"r" = (/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"u" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"v" = (/obj/structure/roguewindow{brokenstate = 1},/obj/structure/alizeria/decor/barricade3,/turf/open/floor/rogue/ruinedwood/platform,/area/rogue/outdoors/woods/alizeria/iceland)
+"J" = (/obj/structure/bed/rogue/inn/hay,/turf/open/floor/rogue/snowrough,/area/rogue/outdoors/woods/alizeria/iceland)
+"L" = (/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/ruinedwood/platform,/area/rogue/outdoors/woods/alizeria/iceland)
+"R" = (/turf/open/floor/rogue/ruinedwood/turned,/area/rogue/outdoors/woods/alizeria/iceland)
+"S" = (/turf/closed/wall/mineral/rogue/wooddark,/area/rogue/outdoors/woods/alizeria/iceland)
+"V" = (/mob/living/simple_animal/hostile/retaliate/rogue/direbear,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+SrlaS
+RpVbm
+lbLRu
+aeRJa
+SavaS
+"}

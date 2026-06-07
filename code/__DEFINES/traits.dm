@@ -4,6 +4,7 @@
 #define	TRAIT_CALLBACK_REMOVE(target, trait, source) CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(___TraitRemove), ##target, ##trait, ##source)
 
 // ROGUETRAITS (description when rmb skills button)
+#define TRAIT_AMBUSH_RESISTANT "Ambush Resistant"
 #define TRAIT_WEBWALK "Webwalker"
 #define TRAIT_NOSTINK "Dead Nose"
 #define TRAIT_ZJUMP "High Jumping"
@@ -24,6 +25,7 @@
 #define TRAIT_BREADY "Battleready"
 #define TRAIT_MEDIUMARMOR "Maille Training"
 #define TRAIT_HEAVYARMOR "Plate Training"
+#define TRAIT_COLD_IMMUNITY "Cold Immunity"
 #define TRAIT_DODGEEXPERT "Fast Reflexes"
 #define TRAIT_MAGEARMOR "Magic Barrier"
 #define TRAIT_DECEIVING_MEEKNESS "Deceiving Meekness"
@@ -283,6 +285,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_BREADY = span_info("Защитная позиция меня не утомляет."),
 	TRAIT_MEDIUMARMOR = span_info("Я умею носить среднюю броню."),
 	TRAIT_HEAVYARMOR = span_info("Я умею носить тяжёлую броню."),
+	TRAIT_COLD_IMMUNITY = span_info("Я устойчив к холоду."),
 	TRAIT_DODGEEXPERT = span_info("Я легко уворачиваюсь от ударов в лёгкой броне."),
 	TRAIT_MAGEARMOR = span_info("Моя магия может время от времени защищать меня от ударов."),
 	TRAIT_DECEIVING_MEEKNESS = span_info("Люди смотрят на меня и думают, что я слабак. Они ошибаются. Я научился скрывать свои пороки от других."),

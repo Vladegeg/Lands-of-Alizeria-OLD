@@ -2,7 +2,7 @@ GLOBAL_LIST_EMPTY(statpacks)
 
 /datum/statpack
 	/// Name of the statpack
-	var/name 
+	var/name
 	/// Flavor description of the statpack (don't include stat totals in this, we'll render them automatically)
 	var/desc
 	/// An associative list of only the stats we're altering. The value can also be a list to signify a range of values - maximum length of 2 for these.

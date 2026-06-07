@@ -65,7 +65,7 @@
 /obj/item/rogueweapon/stoneaxe/woodcut/steel/slayer
     name = "slayer axe" // making this one strong, you spawn with two. If you lose them, that's on you
     desc = "A marvel of craftsdwarfship, this ornate handaxe attunes itself to those who have sworn the Oath."
-    force = 28
+    force = 55
     possible_item_intents = list(/datum/intent/axe/cut/battle, /datum/intent/axe/chop/battle, /datum/intent/axe/bash)
     gripped_intents = null
     icon_state = "slayer_axe"
@@ -127,8 +127,8 @@
 /obj/item/rogueweapon/stoneaxe/battle/slayer // had to take the /stoneaxe/battle as a baseline cuz /greataxe breaks shrink values for whatever reason idk
     name = "slayer greataxe" //same as the handaxe, strong af, tied to TRAIT_SLAYER
     desc = "A marvel of craftsdwarfship, this ornate greataxe attunes itself to those who have sworn the Oath."
-    force = 20
-    force_wielded = 38
+    force = 40
+    force_wielded = 75
     possible_item_intents = list(/datum/intent/axe/cut, /datum/intent/axe/chop, /datum/intent/mace/smash/flataxe)
     gripped_intents = list(/datum/intent/axe/cut/battle/greataxe, /datum/intent/axe/chop/battle/greataxe, /datum/intent/mace/smash/flataxe)
     icon_state = "slayer"

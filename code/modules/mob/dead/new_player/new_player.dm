@@ -533,9 +533,9 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 
 	testing("basedtest 1")
 // ВЛ СИСТЕМА
-	if(rank == "Landowner" || rank == "Prevost of Gendarmes" || rank == "Spymaster" || rank == "Garde du corps" || rank == "Inspector" || rank == "Gendarme Officer" || rank == "Gendarme" || rank == "Militia Captain" || rank == "Priestess" || rank == "Priest" || rank == "Guardian of Ten" || rank == "Caid" || rank == "Daronne" || rank == "Caporegime" || rank == "Mercenary")
-		if(!(src.ckey in landowner_whitelist))
-			to_chat(src, "<span class='warning'>Что бы зайти на эту роль - вам нужно быть учатником сообщества.</span>")
+	if(rank == "Landowner" || rank == "Prevost of Gendarmes" || rank == "Spymaster" || rank == "Garde du corps" || rank == "Inspector" || rank == "Gendarme Officer" || rank == "Gendarme" || rank == "Militia Captain" || rank == "Priestess" || rank == "Priest" || rank == "Guardian of Ten" || rank == "Caid" || rank == "Daronne" || rank == "Caporegime" || rank == "Mercenary" || rank == "Commander" || rank == "Expeditor" || rank == "Tavernier" || rank == "Master" || rank == "Supplier" || rank == "Dark Witch" || rank == "Noble Tailor" || rank == "Magician" || rank == "Huntsman" || rank == "Magician" || rank == "Hired Servant" || rank == "Druidess" || rank == "Adventurer")
+		if(!(src.ckey in GLOB.landowner_whitelist))
+			to_chat(src, "<span class='warning'>Сейчас вы являетесь гостем. Для вас доступна лишь роль 'Traveller'.</span>")
 			return
 
 	SSjob.AssignRole(src, rank, 1)

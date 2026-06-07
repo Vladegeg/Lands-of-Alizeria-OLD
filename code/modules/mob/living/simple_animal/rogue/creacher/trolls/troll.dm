@@ -24,7 +24,7 @@
 	botched_butcher_results = list (
 		/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 2,
 		/obj/item/natural/bundle/bone/full = 1,
-		/obj/item/alch/horn = 1, 
+		/obj/item/alch/horn = 1,
 		/obj/item/natural/hide = 2)
 	butcher_results = list(
 		/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
@@ -38,9 +38,9 @@
 	perfect_butcher_results = list(
 		/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 5,
 		/obj/item/natural/hide = 5,
-		/obj/item/natural/bundle/bone/full = 1, 
-		/obj/item/alch/sinew = 7, 
-		/obj/item/alch/horn = 2, 
+		/obj/item/natural/bundle/bone/full = 1,
+		/obj/item/alch/sinew = 7,
+		/obj/item/alch/horn = 2,
 		/obj/item/alch/viscera = 3,
 		/obj/item/natural/head/troll = 1,
 		)
@@ -53,8 +53,8 @@
 
 	base_intents = list(/datum/intent/unarmed/claw, /datum/intent/simple/bite)
 	attack_sound = list('sound/combat/wooshes/blunt/wooshhuge (1).ogg','sound/combat/wooshes/blunt/wooshhuge (2).ogg','sound/combat/wooshes/blunt/wooshhuge (3).ogg')
-	melee_damage_lower = 40
-	melee_damage_upper = 60
+	melee_damage_lower = 60
+	melee_damage_upper = 80
 	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 
 	STACON = 16
@@ -73,7 +73,7 @@
 	aggressive = TRUE
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/troll
-	
+
 	can_have_ai = FALSE //disable native ai
 	AIStatus = AI_OFF
 	ai_controller = /datum/ai_controller/troll
@@ -179,7 +179,7 @@
 	name = "remains"
 	gender = PLURAL
 	icon_state = "Trolld"
-	
+
 /datum/intent/unarmed/claw/troll
 	clickcd = TROLL_ATTACK_SPEED
 	penfactor = 20

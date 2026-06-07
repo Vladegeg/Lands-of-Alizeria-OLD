@@ -2,7 +2,7 @@
 	name = "Fisher"
 	tutorial = "Ты рыбак. С мешком наживки и удочкой ты один из немногих, кто может надежно добывать стабильный источник еды в этих краях."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/fisher
 
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)

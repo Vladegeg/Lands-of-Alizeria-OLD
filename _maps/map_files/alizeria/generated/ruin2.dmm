@@ -1,0 +1,161 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/mineral/rogue/decowood,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"c" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"d" = (
+/obj/structure/roguewindow{
+	brokenstate = 1
+	},
+/obj/structure/alizeria/decor/barricade5,
+/obj/effect/decal/cleanable/debris/glassy,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"g" = (
+/obj/machinery/light/rogue/hearth{
+	fueluse = 5
+	},
+/obj/item/natural/glass_shard{
+	pixel_y = -13;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bucket/pot/aalloy{
+	pixel_y = 6
+	},
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"h" = (
+/obj/item/natural/wood/plank,
+/obj/item/natural/stone{
+	pixel_x = 9;
+	pixel_y = 6
+	},
+/obj/effect/decal/cleanable/debris/woody,
+/turf/open/floor/rogue/ruinedwood/alizeria/tiles/wood4,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"i" = (
+/turf/closed/wall/mineral/rogue/wooddark/end{
+	dir = 8
+	},
+/area/rogue/outdoors/woods/alizeria/iceland)
+"l" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"o" = (
+/turf/closed/wall/mineral/rogue/wooddark/end{
+	dir = 4
+	},
+/area/rogue/outdoors/woods/alizeria/iceland)
+"q" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/item/bedsheet/rogue/cloth{
+	pixel_x = -10;
+	pixel_y = 23
+	},
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"s" = (
+/turf/closed/wall/mineral/rogue/wooddark/horizontal,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"w" = (
+/obj/machinery/tanningrack{
+	pixel_y = 14
+	},
+/obj/item/roguebin/water/gross{
+	pixel_x = -12
+	},
+/obj/effect/decal/cleanable/debris/stony,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"x" = (
+/obj/effect/decal/cleanable/debris/woody,
+/obj/structure/table/wood/poor/alt,
+/obj/item/reagent_containers/glass/cup/aalloymug{
+	pixel_x = -14;
+	pixel_y = 8
+	},
+/turf/open/floor/rogue/ruinedwood/alizeria/tiles/wood4,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"D" = (
+/turf/closed/wall/mineral/rogue/wooddark/end,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"J" = (
+/obj/item/chair/stool/bar/rogue{
+	pixel_y = 9;
+	pixel_x = 10
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"N" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"O" = (
+/obj/effect/decal/cleanable/debris/woody,
+/obj/effect/decal/cleanable/blood/old,
+/obj/structure/roguecratesal/alizeria/decor/crates12,
+/obj/item/natural/wood/plank,
+/turf/open/floor/rogue/ruinedwood/alizeria/tiles/wood4,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"S" = (
+/turf/closed/wall/mineral/rogue/wooddark/vertical,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"U" = (
+/obj/effect/decal/cleanable/debris/woody,
+/obj/effect/decal/cleanable/debris/glassy,
+/turf/open/floor/rogue/ruinedwood/alizeria/tiles/wood4,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"X" = (
+/obj/structure/mineral_door/wood/donjon/stone/broken,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood/alizeria/tiles/wood4,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"Z" = (
+/obj/effect/decal/cleanable/debris/woody,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+c
+a
+d
+a
+c
+"}
+(2,1,1) = {"
+l
+g
+U
+O
+o
+"}
+(3,1,1) = {"
+S
+Z
+N
+q
+i
+"}
+(4,1,1) = {"
+h
+x
+J
+c
+S
+"}
+(5,1,1) = {"
+c
+D
+X
+s
+w
+"}

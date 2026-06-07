@@ -7,7 +7,7 @@
 "v" = (/obj/structure/closet/crate/roguecloset,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)
 "x" = (/obj/structure/rack/rogue,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)
 "z" = (/obj/structure/bed/rogue/inn,/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)
-"P" = (/obj/structure/mineral_door/wood,/turf/open/floor/rogue/concrete,/area/rogue)
+"P" = (/obj/structure/mineral_door/wood{lockid = "troom1"; locked = 1; name = "Дешёвая комната"},/turf/open/floor/rogue/concrete,/area/rogue)
 "T" = (/obj/effect/decal/cleanable/vomit,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)
 "V" = (/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)
 

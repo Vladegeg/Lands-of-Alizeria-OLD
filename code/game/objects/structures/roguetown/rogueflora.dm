@@ -800,7 +800,7 @@
 	pixel_w = -24
 	density = 0
 	max_integrity = 100
-	static_debris = list(/obj/item/grown/log/tree = 2)
+	static_debris = list(/obj/item/grown/log/tree = 4)
 	stump_type = null
 
 /obj/structure/flora/roguetree/pine/Initialize()
@@ -832,7 +832,7 @@
 	pixel_w = -24
 	density = 0
 	max_integrity = 100
-	static_debris = list(/obj/item/grown/log/tree = 2)
+	static_debris = list(/obj/item/grown/log/tree = 4)
 	stump_type = null
 
 /obj/structure/flora/roguetree/pinesnow/Initialize()

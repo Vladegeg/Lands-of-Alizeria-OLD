@@ -64,7 +64,7 @@
 	..()
 	H.adjust_blindness(-3)
 
-	backpack_contents = /obj/item/rogueweapon/huntingknife/idagger/navaja
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/navaja = 1, /obj/item/roguekey/shop = 1)
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	cloak = /obj/item/clothing/suit/roguetown/armor/haori
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant

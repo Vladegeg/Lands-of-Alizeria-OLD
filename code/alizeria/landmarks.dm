@@ -226,3 +226,11 @@
 /obj/effect/landmark/start/avangard/mercenary
 	name = "Mercenary"
 	icon_state = "arrow"
+
+/obj/effect/landmark/start/avangard/eger
+	name = "Huntsman"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/avangard/aservant
+	name = "Hired Servant"
+	icon_state = "arrow"

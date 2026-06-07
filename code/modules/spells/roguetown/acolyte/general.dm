@@ -58,12 +58,12 @@
 			to_chat(user, span_warning("Мне нужно быть ближе к ним, чтобы воззвать к чуду исцеления!"))
 			return FALSE
 		return TRUE
-	
+
 	if (!user.Adjacent(target))
 		to_chat(user, span_warning("Мне нужно быть рядом с ними, чтобы совершить чудесное исцеление!"))
 		return FALSE
-	
-	return TRUE	
+
+	return TRUE
 
 /obj/effect/proc_holder/spell/invoked/lesser_heal/proc/can_heal(mob/living/user, mob/living/target)
 	if (!range_check(user, target))
@@ -133,9 +133,10 @@
 	if(action)
 		action.UpdateButtonIcon()
 
-	var/the_line = pick(user.patron.miracle_healing_lines)
-	the_line = replacetext(the_line, "%TARGET", "[target]")
-	target.visible_message(span_info(the_line))
+	if(length(user.patron.miracle_healing_lines))
+		var/the_line = pick(user.patron.miracle_healing_lines)
+		the_line = replacetext(the_line, "%TARGET", "[target]")
+		target.visible_message(span_info(the_line))
 
 /obj/effect/proc_holder/spell/invoked/lesser_heal/proc/get_situational_bonus(mob/living/user, mob/living/target)
 	var/situational_info = user.patron.situational_bonus(user, target)
@@ -146,7 +147,7 @@
 	if (conditional_buff)
 		to_chat(user, span_info("Направлять силу моего покровителя легче в этих условиях!"))
 		healing += situational_bonus
-	
+
 	return healing
 
 /obj/effect/proc_holder/spell/invoked/lesser_heal/cast(list/targets, mob/living/user)
@@ -157,11 +158,11 @@
 
 		if (!user.patron || !H)
 			return FALSE
-		
+
 		// perform all of our pre-heal checks inside can_heal, including revert_casts, if needed
 		if (!can_heal(user, target))
 			return FALSE
-		
+
 		if (target != user)
 			if (H.devotion?.level == CLERIC_T4)
 				user.visible_message(span_notice("[user] жестом указывает на [target] с тихой молитвой!"))
@@ -192,7 +193,7 @@
 			user.visible_message(span_info("[user] быстро возлагает руки на себя!"))
 			apply_healing(target, user, get_situational_bonus(user, target))
 			return TRUE
-	
+
 	revert_cast()
 	return FALSE
 
@@ -615,7 +616,7 @@
 		UH.visible_message(span_warning("Крошечные красные нити связывают [UH] и [target], и капли крови бегут по ним!"))
 		playsound(UH, 'sound/magic/bloodheal_start.ogg', 100, TRUE)
 		var/user_skill = UH.get_skill_level(associated_skill)
-		
+
 		// higher miracle skills let us transfer more of our blood at once, but don't really affect the efficiency all that much.
 		var/actual_blood_vol_restore = blood_vol_restore
 		actual_blood_vol_restore += (vol_per_skill * user_skill)

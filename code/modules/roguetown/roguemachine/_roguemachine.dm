@@ -3,4 +3,5 @@
 	break_sound = 'sound/foley/machinebreak.ogg'
 	anchored = TRUE
 	max_integrity = 0
-
+	layer = 3
+	plane = -3

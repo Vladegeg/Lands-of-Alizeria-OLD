@@ -247,6 +247,9 @@
 						list(/datum/skill/misc/medicine, 2, 2)
 	)
 
+/datum/virtue/utility/physician/apply_to_human(mob/living/carbon/human/recipient)
+	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
+
 /datum/virtue/utility/feral_appetite
 	name = "Звериный аппетит"
 	desc = "Сырая, токсичная или испорченная пища не беспокоит мою превосходную пищеварительную систему."

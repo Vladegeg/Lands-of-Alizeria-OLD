@@ -147,48 +147,48 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/clothing/cloak/tabard
 
 /datum/loadout_item/tabard/astrata
-	name = "Astrata Tabard"
-	path = /obj/item/clothing/cloak/templar/astratan
-
-/datum/loadout_item/tabard/noc
-	name = "Noc Tabard"
-	path = /obj/item/clothing/cloak/tabard/crusader/noc
+	name = "Astrata Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/astrata
 
 /datum/loadout_item/tabard/dendor
-	name = "Dendor Tabard"
-	path = /obj/item/clothing/cloak/tabard/crusader/dendor
+	name = "Dendor Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/dendor
 
 /datum/loadout_item/tabard/malum
-	name = "Malum Tabard"
-	path = /obj/item/clothing/cloak/templar/malumite
+	name = "Malum Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/malum
 
 /datum/loadout_item/tabard/eora
-	name = "Eora Tabard"
-	path = /obj/item/clothing/cloak/templar/eoran
+	name = "Eora Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/eora
 
 /datum/loadout_item/tabard/pestra
-	name = "Pestra Tabard"
-	path = /obj/item/clothing/cloak/templar/pestran
+	name = "Pestra Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/pestra
 
 /datum/loadout_item/tabard/ravox
-	name = "Ravox Tabard"
+	name = "Ravox Tabard (Old)"
 	path = /obj/item/clothing/cloak/templar/ravox
 
 /datum/loadout_item/tabard/abyssor
-	name = "Abyssor Tabard"
-	path = /obj/item/clothing/cloak/abyssortabard
+	name = "Abyssor Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/abyssor
 
 /datum/loadout_item/tabard/necra
-	name = "Necra Tabard"
-	path = /obj/item/clothing/cloak/templar/necran
+	name = "Necra Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/necra
 
 /datum/loadout_item/tabard/xylix
-	name = "Xylix Tabard"
-	path = /obj/item/clothing/cloak/templar/xylixian
+	name = "Xylix Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/xylix
 
 /datum/loadout_item/tabard/psydon
-	name = "Psydon Tabard"
+	name = "Psydon Tabard (Old)"
 	path = /obj/item/clothing/cloak/templar/psydon
+
+/datum/loadout_item/tabard/noc
+	name = "Noc Tabard (Old)"
+	path = /obj/item/clothing/cloak/templar/noc
 
 /datum/loadout_item/surcoat
 	name = "Surcoat"
@@ -483,6 +483,34 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/desertbra
 	name = "Desert Bra"
 	path = /obj/item/clothing/suit/roguetown/shirt/desertbra
+
+/datum/loadout_item/eoratabard
+	name = "Eoran Tabard"
+	path = /obj/item/clothing/cloak/templar/eoran
+
+/datum/loadout_item/malumtabard
+	name = "Malum Tabard"
+	path = /obj/item/clothing/cloak/templar/malumite
+
+/datum/loadout_item/astratatabard
+	name = "Astrata Tabard"
+	path = /obj/item/clothing/cloak/templar/astratan
+
+/datum/loadout_item/necratabard
+	name = "Necra Tabard"
+	path = /obj/item/clothing/cloak/templar/necran
+
+/datum/loadout_item/pestratabard
+	name = "Pestra Tabard"
+	path = /obj/item/clothing/cloak/templar/pestran
+
+/datum/loadout_item/ravoxtabard
+	name = "Ravox Tabard"
+	path = /obj/item/clothing/cloak/templar/ravox
+
+/datum/loadout_item/xylixtabard
+	name = "Xylix Tabard"
+	path = /obj/item/clothing/cloak/templar/xylixian
 
 
 //PANTS

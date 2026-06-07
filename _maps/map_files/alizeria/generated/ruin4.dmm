@@ -1,0 +1,190 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/fluff/railing/fence{
+	dir = 4
+	},
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"b" = (
+/obj/structure/fermentation_keg/random/water,
+/obj/machinery/tanningrack{
+	pixel_y = 15;
+	pixel_x = -24;
+	density = 0
+	},
+/obj/item/grown/log/tree/small{
+	pixel_y = -12;
+	pixel_x = -1
+	},
+/obj/item/grown/log/tree/small{
+	pixel_y = -12;
+	pixel_x = 6;
+	layer = 3.02
+	},
+/obj/item/grown/log/tree/small{
+	pixel_y = -6;
+	pixel_x = 3;
+	layer = 3.01
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"e" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"f" = (
+/obj/effect/decal/cleanable/debris/woody,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"g" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"k" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"l" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"n" = (
+/obj/item/reagent_containers/glass/bucket,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"r" = (
+/obj/structure/fluff/railing/wood/north{
+	pixel_y = 8
+	},
+/obj/item/rogueweapon/huntingknife/scissors{
+	pixel_y = 5;
+	layer = 3.01
+	},
+/obj/effect/decal/cleanable/blood/old,
+/obj/item/natural/hide{
+	pixel_y = 13;
+	pixel_x = 4
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"B" = (
+/obj/structure/fluff/railing/fence{
+	dir = 8
+	},
+/obj/structure/fluff/railing/fence,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"D" = (
+/obj/structure/fluff/railing/fence{
+	dir = 8
+	},
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"F" = (
+/obj/structure/fluff/railing/wood/west{
+	pixel_x = -8
+	},
+/obj/item/chair/stool/bar/rogue,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"I" = (
+/obj/structure/table/wood/large_table/south_east,
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow,
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"J" = (
+/obj/structure/fluff/railing/wood/west{
+	pixel_x = -8
+	},
+/obj/structure/table/wood/large_table/south_west,
+/obj/item/natural/bundle/stick,
+/obj/item/rogueweapon/huntingknife/stoneknife{
+	pixel_x = 5
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"O" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"P" = (
+/obj/structure/fluff/railing/fence{
+	dir = 4
+	},
+/obj/structure/fluff/railing/fence,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"Q" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"S" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"U" = (
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"V" = (
+/obj/structure/fluff/railing/wood/north{
+	pixel_y = 8
+	},
+/obj/structure/rack/rogue,
+/obj/item/quiver,
+/obj/item/ammo_casing/caseless/rogue/arrow{
+	pixel_x = 8;
+	pixel_y = -3
+	},
+/obj/item/ammo_casing/caseless/rogue/arrow,
+/obj/item/ammo_casing/caseless/rogue/arrow{
+	pixel_x = 2;
+	pixel_y = -3
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"Y" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"Z" = (
+/obj/effect/decal/cleanable/debris/woody,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+D
+S
+Y
+O
+B
+"}
+(2,1,1) = {"
+O
+r
+F
+J
+O
+"}
+(3,1,1) = {"
+l
+b
+U
+I
+f
+"}
+(4,1,1) = {"
+k
+V
+Z
+Q
+g
+"}
+(5,1,1) = {"
+a
+n
+e
+e
+P
+"}

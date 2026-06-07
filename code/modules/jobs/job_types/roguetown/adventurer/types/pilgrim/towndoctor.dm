@@ -2,7 +2,7 @@
 	name = "Barber Surgeon"
 	tutorial = "Владея грубыми инструментами и накопленными знаниями, ты что-то вроде «вольного лекаря», даже если местный аптекарь отклонил твою заявку. И за эти годы ты, вероятно, перерезал больше людей, чем средний рыцарь."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/doctor
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	cmode_music = 'sound/music/combat_physician.ogg'

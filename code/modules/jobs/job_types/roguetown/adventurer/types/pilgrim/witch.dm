@@ -2,7 +2,7 @@
 	name = "Witch"
 	tutorial = "Ты ведьма. Кто-то считает тебя мудрой, а многие — демоном. Изгнанная и оторванная от общества за крамольные мысли или откровенную ересь, ты варишь зелья, к которым простой люд обращается, когда всё остальное не помогает, и за это тебя терпят — но на расстоянии вытянутой руки. Смотри не окажись на костре, ибо церковь осуждает твои левые искусства."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/witch
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	cmode_music = 'sound/music/combat_cult.ogg'
@@ -98,7 +98,7 @@
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/shapeshift/witch/rous)
 			if("Cabbit")
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/shapeshift/witch/cabbit)
-			
+
 		switch (classchoice)
 			if("Old Magick")
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/guidance)
@@ -147,7 +147,7 @@
 		to_chat(caster, span_warning("Transformation interrupted!"))
 		revert_cast(caster)  // Refund the cooldown
 		return
-	
+
 	// Call parent to actually transform
 	var/total_damage = caster.getBruteLoss() + caster.getOxyLoss() + caster.getFireLoss() + caster.getToxLoss()
 	if (total_damage)
@@ -164,7 +164,7 @@
 		to_chat(shape, span_warn("I am restrained, I can't transform back!"))
 		revert_cast(shape)  // Refund the cooldown
 		return
-	
+
 	var/total_damage = shape.getBruteLoss() + shape.getOxyLoss() + shape.getFireLoss() + shape.getToxLoss()
 	var/shift_time = 3 SECONDS + (total_damage / 10)
 	// Add do-after for witches when reverting
@@ -174,7 +174,7 @@
 		to_chat(shape, span_warning("Transformation revert interrupted!"))
 		revert_cast(shape)  // Refund the cooldown
 		return
-	
+
 	return ..()
 
 // Only zad and bat get knockout on death

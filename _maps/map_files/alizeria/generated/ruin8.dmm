@@ -1,0 +1,22 @@
+"a" = (/obj/effect/decal/cleanable/blood,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"b" = (/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"c" = (/obj/structure/fluff/psycross/crafted,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"p" = (/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"q" = (/obj/effect/decal/cleanable/blood/gibs/up,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"r" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"t" = (/obj/item/organ/stomach/t1,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/alizeria/iceland)
+"x" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"z" = (/obj/effect/decal/cleanable/blood/gibs/down,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"C" = (/obj/item/organ/liver/t1,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"I" = (/obj/effect/decal/cleanable/blood/gibs/torso,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"K" = (/obj/effect/decal/cleanable/blood,/obj/item/organ/lungs/t1,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"V" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"Z" = (/obj/effect/decal/cleanable/blood/gibs/old,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+bxaqx
+zKcta
+brZab
+IaCxp
+Vxapb
+"}

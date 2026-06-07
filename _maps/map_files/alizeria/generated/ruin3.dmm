@@ -1,0 +1,115 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"i" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"j" = (
+/obj/structure/flora/hotspring_rocks,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"m" = (
+/obj/structure/closet/dirthole/closed{
+	dir = 8
+	},
+/obj/structure/fluff/statue/alizeria/mogil1{
+	pixel_y = 16
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"p" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"q" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"x" = (
+/obj/item/alch/matricaria{
+	pixel_y = 27;
+	pixel_x = 9
+	},
+/obj/item/natural/rock{
+	pixel_x = -5;
+	pixel_y = -6
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"A" = (
+/obj/structure/fluff/railing/wood/north,
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"B" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"I" = (
+/obj/structure/fluff/railing/wood/north,
+/obj/structure/flora/tree/dead,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"K" = (
+/obj/structure/flora/roguegrass/bush/jackberry,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"M" = (
+/obj/structure/flora/roguegrass/herb/random,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"R" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"V" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"X" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"Y" = (
+/obj/structure/flora/roguetree/stump/log{
+	pixel_x = -12;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+q
+q
+V
+M
+Y
+"}
+(2,1,1) = {"
+p
+A
+m
+x
+V
+"}
+(3,1,1) = {"
+K
+I
+a
+X
+q
+"}
+(4,1,1) = {"
+i
+q
+R
+p
+q
+"}
+(5,1,1) = {"
+q
+V
+M
+B
+j
+"}

@@ -2,11 +2,11 @@
 	name = "Bow-Hunter"
 	tutorial = "Ты охотник. Со своим луком ты охотишься на зверей, снимаешь шкуры с убитых и готовишь оставшееся мясо. Работа опасная, но важная в том числе и для создания одежды и лёгких доспехов."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/hunter
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 
-	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN, TRAIT_DODGEEXPERT)	
+	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN, TRAIT_DODGEEXPERT)
 	subclass_stats = list(
 		STATKEY_PER = 3,
 		STATKEY_INT = 1,
@@ -68,7 +68,7 @@
 	tutorial = "You are a hunter. With your bow you hunt the fauna of the glade, skinning what you kill and cooking any meat left over. The job is dangerous but important in the circulation of clothing and light armor."
 	outfit = /datum/outfit/job/adventurer/hunter_spear
 
-	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN)	
+	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN)
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_CON = 1,

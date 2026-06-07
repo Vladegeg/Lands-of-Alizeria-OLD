@@ -8,8 +8,6 @@
 	allowed_races = ALIZ_ALL_RACES
 	tutorial = "“ы и кузнец и инженер в одном лице. ѕо факту ты €вл€ешьс€ самым образованным человеком на острове вопреки мнению о том, что таковыми €вл€ютс€ маги. Ќа тебе лежит задача отстройки крепости и приведение сломанных инструментов, доспехов и прочего снар€жени€ в пор€док. –овно как и все остальные члены экспедиции - ты обладаешь всеми необходимыми навыками дл€ выживани€ в лесу. “ем не менее помни - больше всего ты нужен в крепости, а не в лесу или руинах."
 	advclass_cat_rolls = list(CTAG_MASTER = 4)
-	outfit = /datum/outfit/job/adventurer/master
-	outfit_female = /datum/outfit/job/adventurer/master
 	bypass_lastclass = TRUE
 	bypass_jobban = FALSE
 	display_order = JDO_MASTER
@@ -92,6 +90,6 @@
 						/obj/item/rogueore/iron=1,
 						/obj/item/flashlight/flare/torch = 1,
 						/obj/item/recipe_book/blacksmithing = 1,
-						/obj/item/roguekey/alizeria/pblacksmith = 1,
+						/obj/item/roguekey/alizeria/master = 1,
 						/obj/item/rogueweapon/scabbard/sheath = 1,
 						)

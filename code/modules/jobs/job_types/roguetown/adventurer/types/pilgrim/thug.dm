@@ -2,7 +2,7 @@
 	title = "Thug"
 	tutorial = "Возможно, ты никогда не был самым умным человеком в городе, зато, может, был самым крепким. Достаточно крепким, чтобы земледельцы платили тебе за перевозку сайгашьего навоза, достаточно крепким, чтобы шахтёры перекладывали на тебя часть своей работы, достаточно крепким для плотника, который не хочет платить большие деньги за нарубленные дрова, и достаточно крепким для любого, кому нужен тупой громила, чтобы выглядеть устрашающе."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/thug
 	cmode_music = 'sound/music/combat_bum.ogg'
 	total_positions = 8 // i dont want an army of towner thugs
@@ -59,7 +59,7 @@
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN, 
+		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/labor/mining = SKILL_LEVEL_NOVICE,
 		/datum/skill/labor/lumberjacking = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/farming = SKILL_LEVEL_NOVICE,
@@ -118,7 +118,7 @@
 		/datum/skill/craft/armorsmithing = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE, 
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/farming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/fishing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
@@ -169,7 +169,7 @@
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/athletics = SKILL_LEVEL_MASTER, // absolutely unrelenting
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE, 
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/mining = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/labor/lumberjacking = SKILL_LEVEL_JOURNEYMAN,
 	)

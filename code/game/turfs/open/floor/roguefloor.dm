@@ -143,6 +143,11 @@
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/open/floor/rogue/snowroof)
+
+/turf/open/floor/rogue/rooftop/cardinal_smooth(adjacencies)
+	roguesmooth(adjacencies)
 
 /turf/open/floor/rogue/rooftop/Initialize()
 	. = ..()
@@ -214,6 +219,27 @@
 	. = ..()
 
 /turf/open/floor/rogue/AzureSand/cardinal_smooth(adjacencies)
+	roguesmooth(adjacencies)
+
+/turf/open/floor/rogue/snowroof
+	name = "roof snow"
+	desc = "A gentle blanket of snow."
+	icon_state = "snow"
+	layer = MID_TURF_LAYER
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_SOFT_BAREFOOT
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	tiled_dirt = FALSE
+	landsound = 'sound/foley/jumpland/grassland.wav'
+	slowdown = 0
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/open/floor/rogue/ice,
+						/turf/open/floor/rogue/rooftop)
+	neighborlay = "snowedge"
+	spread_chance = 0
+	var/water_reagent = /datum/reagent/snow
+
+/turf/open/floor/rogue/snowroof/cardinal_smooth(adjacencies)
 	roguesmooth(adjacencies)
 
 /turf/open/floor/rogue/snow
@@ -314,6 +340,7 @@
 						/turf/open/floor/rogue/grasscold,
 						/turf/open/floor/rogue/dirt,
 						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snow/scoop,
 						/turf/open/floor/rogue/grassswamp,
 						/turf/open/floor/rogue/ice,
 						/turf/open/floor/rogue/dirt/road)
@@ -341,6 +368,7 @@
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/open/floor/rogue/snowrough,
 						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snow/scoop,
 						/turf/open/floor/rogue/grassswamp,
 						/turf/open/floor/rogue/ice)
 	neighborlay = "snowpatchy_grassedge"

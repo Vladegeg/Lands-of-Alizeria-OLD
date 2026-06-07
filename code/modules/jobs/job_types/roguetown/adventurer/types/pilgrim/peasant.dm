@@ -2,7 +2,7 @@
 	name = "Farmer"
 	tutorial = "Будучи крестьянином, ты умелый фермер, способный выращивать разнообразные культуры. Присоединяйся к местным земледельцам на их ферме или создай свой маленький сад."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	traits_applied = list(TRAIT_PEASANTMILITIA, TRAIT_SEEDKNOW)
 	outfit = /datum/outfit/job/adventurer/peasant
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)

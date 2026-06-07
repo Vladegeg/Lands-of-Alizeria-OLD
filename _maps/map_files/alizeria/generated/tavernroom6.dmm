@@ -1,5 +1,5 @@
 "a" = (/turf/closed/wall/mineral/rogue/decowood,/area/rogue)
-"b" = (/obj/structure/mineral_door/wood,/turf/open/floor/rogue/concrete,/area/rogue)
+"b" = (/obj/structure/mineral_door/wood{lockid = "troom1"; locked = 1; name = "Дешёвая комната"},/turf/open/floor/rogue/concrete,/area/rogue)
 "c" = (/obj/effect/decal/cleanable/blood,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)
 "w" = (/obj/structure/table/wood/poor,/obj/effect/decal/cleanable/dirt/cobweb,/obj/item/reagent_containers/glass/bottle/rogue/beer{pixel_y = 6; pixel_x = 7},/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)
 "y" = (/obj/structure/closet/crate/drawer,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue)

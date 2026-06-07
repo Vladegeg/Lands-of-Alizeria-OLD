@@ -258,7 +258,7 @@
 
 /obj/projectile/bullet/reusable/pyla
 	name = "пуля"
-	damage = 70
+	damage = 90
 	damage_type = BRUTE
 	armor_penetration = 70
 	icon = 'icons/roguetown/weapons/ammo.dmi'

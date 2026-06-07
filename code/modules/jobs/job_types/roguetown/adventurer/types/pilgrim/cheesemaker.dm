@@ -2,7 +2,7 @@
 	name = "Cheesemaker"
 	tutorial = "Сыр, сыр, сыр! У тебя есть редкая головка сыра, и ты знаешь, как приготовить ещё этого редкого деликатеса. Будучи очень искусным поваром, ты приходишь с некоторыми ингредиентами, чтобы готовить еду и кормить народ. Приготовь какое-нибудь блюдо из продуктов, собранных из местной флоры и фауны."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/cheesemaker
 
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)

@@ -291,7 +291,7 @@
 			var/datum/species/dullahan/dullahan = H.dna.species
 			head = dullahan.my_head
 
-		var/cyclops_left = HAS_TRAIT(src, TRAIT_CYCLOPS_LEFT) 
+		var/cyclops_left = HAS_TRAIT(src, TRAIT_CYCLOPS_LEFT)
 		var/cyclops_right = HAS_TRAIT(src, TRAIT_CYCLOPS_RIGHT)
 
 		if(head)

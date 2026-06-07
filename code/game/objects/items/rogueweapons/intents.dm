@@ -405,7 +405,7 @@
 	charging_slowdown = 3
 	warnoffset = 20
 	var/strength_check = FALSE //used when we fire HEAVY bows
-	
+
 /datum/intent/proc/arc_check()
 	return FALSE
 
@@ -462,11 +462,11 @@
 	if(ismob(target))
 		var/mob/M = target
 		var/list/targetl = list(target)
-		user.visible_message(span_warning("[user] taunts [M]!"), span_warning("I taunt [M]!"), ignored_mobs = targetl)
+		user.visible_message(span_warning("[user] угрожает [M]!"), span_warning("Я угрожаю [M]!"), ignored_mobs = targetl)
 		user.emote("taunt")
 		if(M.client)
 			if(M.can_see_cone(user))
-				to_chat(M, span_danger("[user] taunts me!"))
+				to_chat(M, span_danger("[user] угрожает мне!"))
 		else
 			M.taunted(user)
 	return
@@ -488,7 +488,7 @@
 	miss_text = "claw at the air"
 	miss_sound = "punchwoosh"
 	item_d_type = "slash"
-	
+
 
 /datum/intent/unarmed/shove
 	name = "shove"
@@ -506,10 +506,10 @@
 	if(ismob(target))
 		var/mob/M = target
 		var/list/targetl = list(target)
-		user.visible_message(span_blue("[user] shoos [M] away."), span_blue("I shoo [M] away."), ignored_mobs = targetl)
+		user.visible_message(span_blue("[user] прогоняет [M] прочь."), span_blue("Я прогоняю [M] прочь."), ignored_mobs = targetl)
 		if(M.client)
 			if(M.can_see_cone(user))
-				to_chat(M, span_blue("[user] shoos me away."))
+				to_chat(M, span_blue("[user] прогоняет меня прочь."))
 		else
 			M.shood(user)
 	return
@@ -533,10 +533,10 @@
 	if(ismob(target))
 		var/mob/M = target
 		var/list/targetl = list(target)
-		user.visible_message(span_green("[user] beckons [M] to come closer."), span_green("I beckon [M] to come closer."), ignored_mobs = targetl)
+		user.visible_message(span_green("[user] просит [M] подойти поближе."), span_green("Я прошу [M] подойти поближе."), ignored_mobs = targetl)
 		if(M.client)
 			if(M.can_see_cone(user))
-				to_chat(M, span_green("[user] beckons me to come closer."))
+				to_chat(M, span_green("[user] просит меня подойти поближе."))
 		else
 			M.beckoned(user)
 	return
@@ -557,10 +557,10 @@
 	if(ismob(target))
 		var/mob/M = target
 		var/list/targetl = list(target)
-		user.visible_message(span_green("[user] waves friendly at [M]."), span_green("I wave friendly at [M]."), ignored_mobs = targetl)
+		user.visible_message(span_green("[user] дружелюбно машет [M]."), span_green("Я дружелюбно машу рукой [M]."), ignored_mobs = targetl)
 		if(M.client)
 			if(M.can_see_cone(user))
-				to_chat(M, span_green("[user] gives me a friendly wave."))
+				to_chat(M, span_green("[user] дружелюбно машет мне рукой."))
 	return
 
 /datum/intent/simple/headbutt

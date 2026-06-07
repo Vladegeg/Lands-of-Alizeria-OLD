@@ -1,10 +1,12 @@
 // ¬À —»—“≈Ã¿
-var/global/list/landowner_whitelist = list(
+
+GLOBAL_LIST_INIT(landowner_whitelist, list(
 	"ivaxan",
+	"vladegeg",
 	"blazeba",
 	"thisisadvokat",
 	"moksii",
-	"pauchek_dio",
+	"pauchekdio",
 	"lorki",
 	"elite1323",
 	"honkhonk2",
@@ -31,8 +33,8 @@ var/global/list/landowner_whitelist = list(
 	"myhungryboy",
 	"lieeater",
 	"jubothoe",
-	"tempest_5251",
-	"illa_3000",
+	"tempest5251",
+	"illa3000",
 	"arion1234",
 	"sloak",
 	"devolgen",
@@ -44,30 +46,74 @@ var/global/list/landowner_whitelist = list(
 	"mogetopenci",
 	"lechis",
 	"metaslavery",
-	"tabyret_29",
+	"tabyret29",
 	"rodion09",
 	"namenlos66",
-	"sergo_abchihbovich",
+	"sergoabchihbovich",
 	"atomas",
 	"mrbav",
 	"gardelin0",
 	"sneeek",
 	"sarov",
-	"vladegeg",
 	"illa3000",
 	"tabyret29",
 	"tempest5251",
 	"lazurazur",
 	"pauchekdio",
 	"imm0ral",
-)
+	"elite1323",
+	"misteran",
+	"sonetto",
+	"dragontea",
+	"sikerume",
+	"raidentempest",
+	"pavlasprotopas",
+	"2vitamin2",
+	"doxom",
+	"flexok",
+	"loremaster2",
+	"fedor1545",
+	"chaosrebell",
+	"sarelam",
+	"kaifaskain13",
+	"diadokh",
+	"fatfat",
+	"merder12",
+	"binarg",
+	"deylan",
+	"oneofnoobs",
+	"flaitsas",
+	"qqtie",
+	"drifter1",
+	"qwxizx",
+	"evilwithclaws",
+	"hotsosi",
+	"brunoru",
+	"barsua",
+	"samcresh",
+	"sekonda",
+	"hagi6atop835",
+	"kek123456781",
+	"nikolaisshh",
+	"spiritgatsu",
+	"vanaim",
+	"coontime",
+	"dikiybonor",
+	"taweike",
+	"limbosans",
+	"gardelin0",
+	"sheetofseaweed",
+	"sneeek",
+	"sarov",
+	"patapoiiika",
+))
 
 /datum/job/roguetown/lord/special_job_check(mob/dead/new_player/player)
 	if(!player)
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -76,7 +122,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -85,7 +131,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -94,7 +140,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -103,7 +149,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -112,7 +158,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -121,7 +167,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -130,7 +176,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -139,7 +185,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -148,7 +194,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -157,7 +203,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -166,7 +212,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -175,7 +221,7 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE
 
@@ -184,6 +230,116 @@ var/global/list/landowner_whitelist = list(
 		return FALSE
 	if(!player.ckey)
 		return FALSE
-	if(!(player.ckey in landowner_whitelist))
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/////////////////////////////////////////////
+
+/datum/job/roguetown/darkwitch/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/eger/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/expeditor/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/aservant/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/master/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/commander/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/storyteller/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/supplier/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/ntailor/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/tavernier/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/adventurer/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
+		return FALSE
+	return TRUE
+
+/datum/job/roguetown/druid/special_job_check(mob/dead/new_player/player)
+	if(!player)
+		return FALSE
+	if(!player.ckey)
+		return FALSE
+	if(!(player.ckey in GLOB.landowner_whitelist))
 		return FALSE
 	return TRUE

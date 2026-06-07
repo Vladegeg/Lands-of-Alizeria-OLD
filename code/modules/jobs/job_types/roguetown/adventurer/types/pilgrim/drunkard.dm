@@ -2,7 +2,7 @@
 	name = "Gambler"
 	tutorial = "Ты игрок. Все в твоей жизни от тебя отвернулись, и стресс от постоянных проигрышей сказался на твоём теле. Всё, что у тебя осталось — это несколько карт, кости и что там в этой бутылке. По крайней мере, ты всё ещё в милости у Баоты, питаешь ли ты к ней ответные чувства или нет..."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/drunkard
 	category_tags = list(CTAG_TOWNER)
 	traits_applied = list(TRAIT_CICERONE)

@@ -30,7 +30,7 @@
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/shields = SKILL_LEVEL_EXPERT,	
+		/datum/skill/combat/shields = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
@@ -152,7 +152,7 @@
 	desc = "Thick fur pants made to endure the coldest winds, offering a share of protection from the fangs and claws of beasts and men alike."
 	icon_state = "atgervi_pants"
 	item_state = "atgervi_pants"
-	
+
 /obj/item/clothing/gloves/roguetown/angle/atgervi
 	name = "fur-lined leather gloves"
 	desc = "Dense, padded gloves made for the harshest of climates and the wildest of beasts encountered in the untamed highlands."
@@ -219,7 +219,7 @@
 	experimental_onhip = TRUE
 	wdefense = 5
 	max_blade_int = 250
-	force = 26
+	force = 50
 	force_wielded = 33
 
 /obj/item/rogueweapon/stoneaxe/woodcut/steel/atgervi/getonmobprop(tag)

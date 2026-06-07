@@ -2,7 +2,7 @@
 	name = "Jeweler"
 	tutorial = "You make your coin peddling exotic jewelry, gems, and shiny things."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/trader
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
 	class_select_category = CLASS_CAT_TRADER
@@ -323,15 +323,15 @@
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead = 1, 
+		/obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/beer/voddena = 1,
-		/obj/item/reagent_containers/glass/bottle/rogue/beer/blackgoat = 1, 
-		/obj/item/reagent_containers/glass/bottle/rogue/elfred = 1, 
-		/obj/item/reagent_containers/glass/bottle/rogue/elfblue = 1, 
+		/obj/item/reagent_containers/glass/bottle/rogue/beer/blackgoat = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/elfred = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/elfblue = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/ingot/copper = 2,
-		/obj/item/roguegear = 1, 
+		/obj/item/roguegear = 1,
 		/obj/item/recipe_book/survival = 1)
 
 /datum/advclass/trader/cuisiner

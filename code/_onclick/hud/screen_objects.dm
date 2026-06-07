@@ -1393,7 +1393,7 @@
 	name = "life"
 	icon_state = "blood100"
 	screen_loc = rogueui_blood
-	icon = 'icons/mob/rogueheat.dmi'
+	icon = 'icons/mob/health.dmi'
 
 /atom/movable/screen/healths/blood/Click(location, control, params)
 	var/list/modifiers = params2list(params)
@@ -1851,8 +1851,8 @@
 /atom/movable/screen/stamina
 	name = "stamina"
 	icon_state = "stam100"
-	icon = 'icons/mob/rogueheat.dmi'
-	screen_loc = rogueui_fat
+	icon = 'icons/mob/health.dmi'
+	screen_loc = rogueui_stam
 
 /atom/movable/screen/energy
 	name = "energy"

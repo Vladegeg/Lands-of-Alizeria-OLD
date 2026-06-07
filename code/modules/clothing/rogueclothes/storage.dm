@@ -305,6 +305,47 @@
 	bloody_icon_state = "bodyblood"
 	sewrepair = TRUE
 	component_type = /datum/component/storage/concrete/roguetown/backpack
+	/// Attached bedroll
+	var/obj/item/bedroll/attached_bedroll = null
+
+/obj/item/storage/backpack/rogue/backpack/attack_right(mob/user)
+	// If bedroll is attached, allow to detach it
+	if(attached_bedroll)
+		user.visible_message(span_notice("[user] detaches the bedroll from [src.name]."))
+		attached_bedroll.forceMove(get_turf(src))
+		attached_bedroll = null
+		update_icon()
+		return TRUE
+
+	// If no bedroll attached, try to attach one from user's hands
+	var/obj/item/held_item = user.get_active_held_item()
+	if(held_item && istype(held_item, /obj/item/bedroll))
+		user.visible_message(span_notice("[user] attaches the bedroll to [src.name]."))
+		attached_bedroll = held_item
+		held_item.forceMove(src)
+		update_icon()
+		return TRUE
+
+	// If no bedroll operation, open storage normally
+	var/datum/component/storage/CP = GetComponent(/datum/component/storage)
+	if(CP)
+		CP.rmb_show(user)
+		return TRUE
+	. = ..()
+
+/obj/item/storage/backpack/rogue/backpack/examine(mob/user)
+	. = ..()
+	if(attached_bedroll)
+		. += span_notice("A bedroll is attached to [src.name].")
+
+/obj/item/storage/backpack/rogue/backpack/update_icon()
+	. = ..()
+	if(attached_bedroll)
+		icon_state = "backpack_bedroll"
+		item_state = "backpack_bedroll"
+	else
+		icon_state = "backpack"
+		item_state = "backpack"
 
 /obj/item/storage/backpack/rogue/artibackpack
 	name = "Cooling backpack"

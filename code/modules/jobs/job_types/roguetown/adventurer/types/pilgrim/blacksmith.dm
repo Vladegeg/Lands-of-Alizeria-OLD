@@ -2,7 +2,7 @@
 	name = "Stranger Blacksmith"
 	tutorial = "Ты умелый кузнец, способный ковать надёжное оружие для воинов в болотах, но только после того, как построишь себе кузницу, разумеется."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALIZ_ALL_RACES
 	outfit = /datum/outfit/job/adventurer/blacksmith
 	subclass_social_rank = SOCIAL_RANK_YEOMAN
 

@@ -1,0 +1,19 @@
+"a" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/grasscold,/area/rogue)
+"c" = (/obj/structure/flora/roguegrass/cold,/obj/effect/spawner/trap,/turf/open/floor/rogue/snow,/area/rogue)
+"n" = (/obj/effect/spawner/trap,/turf/open/floor/rogue/snowpatchy,/area/rogue)
+"B" = (/obj/structure/flora/roguetree/pinesnow,/turf/open/floor/rogue/grasscold,/area/rogue)
+"D" = (/turf/open/floor/rogue/snowpatchy,/area/rogue)
+"J" = (/obj/structure/flora/roguegrass/cold,/obj/structure/flora/roguetree/pinesnow,/turf/open/floor/rogue/grasscold,/area/rogue)
+"M" = (/turf/open/floor/rogue/grasscold,/area/rogue)
+"N" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snow,/area/rogue)
+"P" = (/turf/open/floor/rogue/snowrough,/area/rogue)
+"S" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snowpatchy,/area/rogue)
+"W" = (/turf/open/floor/rogue/snow,/area/rogue)
+
+(1,1,1) = {"
+WWMMS
+WJMcW
+DMNWP
+SnWBW
+DMaaW
+"}

@@ -351,3 +351,84 @@
 	name = "forestplaceholder_5"
 	id = "forestplaceholder_5"
 	mappath = "_maps/map_files/alizeria/generated/forest5x5.dmm"
+
+///////////////////////////////////////////////////////
+
+/datum/map_template/ruins_1
+	name = "ruins_1"
+	id = "ruins_1"
+	mappath = "_maps/map_files/alizeria/generated/ruin1.dmm"
+
+/datum/map_template/ruins_2
+	name = "ruins_2"
+	id = "ruins_2"
+	mappath = "_maps/map_files/alizeria/generated/ruin2.dmm"
+
+/datum/map_template/ruins_3
+	name = "ruins_3"
+	id = "ruins_3"
+	mappath = "_maps/map_files/alizeria/generated/ruin3.dmm"
+
+/datum/map_template/ruins_4
+	name = "ruins_4"
+	id = "ruins_4"
+	mappath = "_maps/map_files/alizeria/generated/ruin4.dmm"
+
+/datum/map_template/ruins_5
+	name = "ruins_5"
+	id = "ruins_5"
+	mappath = "_maps/map_files/alizeria/generated/ruin5.dmm"
+
+/datum/map_template/ruins_6
+	name = "ruins_6"
+	id = "ruins_6"
+	mappath = "_maps/map_files/alizeria/generated/ruin6.dmm"
+
+/datum/map_template/ruins_7
+	name = "ruins_7"
+	id = "ruins_7"
+	mappath = "_maps/map_files/alizeria/generated/ruin7.dmm"
+
+/datum/map_template/ruins_8
+	name = "ruins_8"
+	id = "ruins_8"
+	mappath = "_maps/map_files/alizeria/generated/ruin8.dmm"
+
+/datum/map_template/ruins_9
+	name = "ruins_9"
+	id = "ruins_9"
+	mappath = "_maps/map_files/alizeria/generated/ruin9.dmm"
+
+/datum/map_template/ruins_10
+	name = "ruins_10"
+	id = "ruins_10"
+	mappath = "_maps/map_files/alizeria/generated/ruin10.dmm"
+
+/datum/map_template/ruins_11
+	name = "ruins_11"
+	id = "ruins_11"
+	mappath = "_maps/map_files/alizeria/generated/ruin11.dmm"
+
+/datum/map_template/ruins_12
+	name = "ruins_12"
+	id = "ruins_12"
+	mappath = "_maps/map_files/alizeria/generated/ruin12.dmm"
+
+/datum/map_template/ruins_13
+	name = "ruins_13"
+	id = "ruins_13"
+	mappath = "_maps/map_files/alizeria/generated/ruin13.dmm"
+
+/datum/map_template/ruins_14
+	name = "ruins_14"
+	id = "ruins_14"
+	mappath = "_maps/map_files/alizeria/generated/ruin14.dmm"
+
+/datum/map_template/ruins_15
+	name = "ruins_15"
+	id = "ruins_15"
+	mappath = "_maps/map_files/alizeria/generated/ruin15.dmm"
+
+/obj/effect/landmark/map_load_mark/ruinsspawner
+	name = "ruinsspawner"
+	templates = list("forestplaceholder_5", "ruins_1", "ruins_2", "ruins_3", "ruins_4", "ruins_5", "ruins_6", "ruins_7", "ruins_8", "ruins_9", "ruins_10", "ruins_11", "ruins_12", "ruins_13", "ruins_14", "ruins_15")

@@ -1,0 +1,212 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/fluff/statue{
+	pixel_y = 21
+	},
+/obj/structure/table/church/m,
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/item/bedsheet/rogue/cloth{
+	pixel_y = 9;
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/alchemical/healthpot{
+	pixel_x = -13;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"c" = (
+/obj/effect/decal/herringbone{
+	dir = 5
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	pixel_x = -18
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"d" = (
+/obj/effect/decal/cobbleedge{
+	dir = 6;
+	pixel_x = -1;
+	pixel_y = 1
+	},
+/obj/effect/decal/herringbone,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"f" = (
+/obj/effect/decal/herringbone,
+/obj/effect/decal/herringbone{
+	dir = 4
+	},
+/obj/item/alch/rosa{
+	pixel_y = 15;
+	pixel_x = 7
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"h" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"j" = (
+/obj/structure/table/church,
+/obj/machinery/light/rogue/wallfire/candle/floorcandle,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"k" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"l" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread";
+	pixel_y = -6
+	},
+/obj/effect/decal/herringbone{
+	dir = 4
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"n" = (
+/obj/effect/decal/herringbone{
+	dir = 10
+	},
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"o" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"p" = (
+/obj/item/alch/salvia{
+	pixel_x = -17;
+	pixel_y = 15
+	},
+/obj/item/roguecoin/aalloy,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"s" = (
+/obj/structure/flora/tree/dead,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"t" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10
+	},
+/obj/effect/decal/herringbone,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"u" = (
+/obj/structure/table/church/end,
+/obj/item/alch/matricaria{
+	pixel_y = 7
+	},
+/obj/structure/fluff/walldeco/stone{
+	icon_state = "walldec6";
+	pixel_y = 32
+	},
+/obj/item/roguecoin/aalloy{
+	pixel_x = -11;
+	pixel_y = 11
+	},
+/obj/item/roguecoin/aalloy/pile{
+	pixel_y = 9;
+	pixel_x = 6
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"y" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"A" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"B" = (
+/obj/effect/decal/herringbone{
+	dir = 6
+	},
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"C" = (
+/obj/effect/decal/herringbone{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"E" = (
+/obj/item/reagent_containers/glass/bowl/aalloy{
+	pixel_y = 15
+	},
+/obj/item/roguecoin/aalloy{
+	pixel_x = -11;
+	pixel_y = 11
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"I" = (
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	pixel_x = -1;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"O" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"Q" = (
+/obj/effect/decal/herringbone{
+	dir = 8
+	},
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"U" = (
+/obj/effect/decal/cobbleedge{
+	dir = 6
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/alizeria/iceland)
+"Z" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+y
+B
+l
+c
+o
+"}
+(2,1,1) = {"
+k
+Z
+j
+f
+I
+"}
+(3,1,1) = {"
+A
+h
+a
+E
+d
+"}
+(4,1,1) = {"
+O
+h
+u
+p
+t
+"}
+(5,1,1) = {"
+s
+n
+Q
+C
+U
+"}

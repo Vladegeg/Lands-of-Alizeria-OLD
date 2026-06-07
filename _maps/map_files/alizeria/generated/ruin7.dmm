@@ -1,0 +1,19 @@
+"a" = (/turf/open/floor/rogue/snowrough,/area/rogue/outdoors/woods/alizeria/iceland)
+"d" = (/obj/item/rogueweapon/shovel{pixel_y = -13; pixel_x = 6},/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"h" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"s" = (/turf/open/floor/rogue/grasscold,/area/rogue/outdoors/woods/alizeria/iceland)
+"A" = (/obj/item/natural/dirtclod,/obj/item/natural/dirtclod{pixel_y = 12; pixel_x = -3},/obj/item/natural/dirtclod{pixel_y = 8; pixel_x = 12},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/alizeria/iceland)
+"F" = (/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/alizeria/iceland)
+"H" = (/obj/structure/closet/crate/chest,/obj/effect/spawner/lootdrop/iron_copper_weapon_spawner,/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/obj/effect/spawner/lootdrop/roguetown/dungeon/tools,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"N" = (/obj/structure/closet/dirthole/grave,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/alizeria/iceland)
+"P" = (/obj/effect/spawner/roguemap/alizeria/bushspawner,/turf/open/floor/rogue/snowrough,/area/rogue/outdoors/woods/alizeria/iceland)
+"R" = (/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/alizeria/iceland)
+"U" = (/obj/structure/flora/roguegrass/cold,/turf/open/floor/rogue/snowrough,/area/rogue/outdoors/woods/alizeria/iceland)
+
+(1,1,1) = {"
+hPRsh
+sRdHR
+RUFNR
+RRAFP
+hRRha
+"}

@@ -11,9 +11,7 @@
 	display_order = JDO_DARKWITCH
 	cmode_music = 'sound/music/combat_cult.ogg'
 
-	spells = list(/obj/effect/proc_holder/spell/targeted/shapeshift/witch/cat/black, /obj/effect/proc_holder/spell/targeted/shapeshift/witch/crow, /obj/effect/proc_holder/spell/targeted/shapeshift/witch/bat)
-
-	outfit = /datum/outfit/job/darkwitch/darkwitch
+	spells = list(/obj/effect/proc_holder/spell/targeted/shapeshift/witch/cat/black, /obj/effect/proc_holder/spell/targeted/shapeshift/witch/crow, /obj/effect/proc_holder/spell/targeted/shapeshift/witch/bat, /obj/effect/proc_holder/spell/invoked/diagnose/secular)
 	give_bank_account = 35
 	min_pq = 0
 	max_pq = null
@@ -80,7 +78,7 @@
 						/obj/item/pestle = 1,
 						/obj/item/candle/yellow = 2,
 						/obj/item/recipe_book/alchemy = 1,
-						/obj/item/recipe_book/survival = 1,
 						/obj/item/recipe_book/magic = 1,
 						/obj/item/ritechalk = 1,
+						/obj/item/roguekey/alizeria/witch = 1,
 						)
