@@ -99,7 +99,7 @@
 //Called when we bump onto a mob
 /mob/living/proc/MobBump(mob/M)
 	//Even if we don't push/swap places, we "touched" them, so spread fire
-	spreadFire(M)
+//	spreadFire(M)
 
 	if(now_pushing)
 		return TRUE
@@ -1942,7 +1942,7 @@
 		return
 	changeNext_move(HAS_TRAIT(src, TRAIT_SLEUTH) ? CLICK_CD_SLEUTH : CLICK_CD_TRACKING)
 	if(m_intent != MOVE_INTENT_SNEAK && !HAS_TRAIT(src, TRAIT_SLEUTH))
-		visible_message(span_info("[src] begins looking around."))
+		visible_message(span_info("[src] начинает осматривать всё вокруг..."))
 	var/looktime = 50 - (STAPER * 2) - (get_skill_level(/datum/skill/misc/tracking) * 5)
 	looktime = clamp(looktime, 7, 50)
 	if(HAS_TRAIT(src, TRAIT_SLEUTH) ? move_after(src, looktime, target = src) : do_after(src, looktime, target = src))
@@ -2016,6 +2016,9 @@
 			found_ping(get_turf(potential_track), client, "hidden")
 			potential_track.handle_revealing(src)
 		//Hearthstone end.
+		//Hunting tracks
+		for(var/obj/effect/hunting_track/potential_track in view(7, src))
+			found_ping(get_turf(potential_track), client, "hunting")
 
 
 /proc/found_ping(atom/A, client/C, state)

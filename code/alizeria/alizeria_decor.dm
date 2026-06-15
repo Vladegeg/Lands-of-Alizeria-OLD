@@ -639,6 +639,16 @@
 	icon_state = "wooddecal2_8"
 	mouse_opacity = 0
 
+/obj/effect/decal/alizeria/decals/blooddecal
+	name = "affected branches"
+	desc = ""
+	icon = 'icons/roguetown/alizeria/decals.dmi'
+	icon_state = "aid"
+	mouse_opacity = 0
+
+/obj/effect/decal/alizeria/decals/blooddecal/Initialize()
+	dir = pick(GLOB.cardinals)
+	. = ..()
 // ЛЮК
 /obj/structure/ladder/alizeria/hatch
 	name = "люк"
@@ -1334,14 +1344,14 @@
 					/obj/item/clothing/mask/cigarette/rollie/cannabis=1,
 					/obj/item/clothing/mask/cigarette/rollie/nicotine=1,
 					/mob/living/simple_animal/butterfly=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/chicken=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/mirespider/angry=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab/cabbit=1,
+					/obj/item/reagent_containers/glass/bottle=1,
+					/obj/item/natural/bone=1,
+					/obj/item/reagent_containers/glass/cup/wooden=1,
 					/mob/living/simple_animal/hostile/rogue/skeleton=1,
 					/mob/living/simple_animal/pet/familiar/cat_black=1,
 					/obj/item/lovepotion=1,
 					/obj/item/bomb=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/direbear=1,
+					/obj/item/natural/fur=1,
 					/mob/living/simple_animal/hostile/retaliate/rogue/spider=1,
 					/mob/living/simple_animal/hostile/retaliate/rogue/wolf=1,
 					/obj/item/clothing/shoes/roguetown/simpleshoes/buckle=1,
@@ -1362,7 +1372,12 @@
 					/obj/item/roguecoin/gold=1,
 					/obj/item/reagent_containers/food/snacks/rogue/berrycakeslice/poison=1,
 					/obj/item/reagent_containers/glass/bottle/rogue/beer=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/wolf_undead=1))
+					/obj/item/reagent_containers/glass/bottle/rogue/berrypoison = 1,
+					/obj/item/natural/poo/cow = 1,
+					/obj/item/kitchen/spoon/iron = 1,
+					/obj/item/kitchen/fork/gold = 1,
+					/obj/item/dice/d6 = 1,
+					/obj/item/clothing/under/roguetown/trou/leather=1))
 	loot_replenish()
 	pixel_x += rand(-3,3)
 	return ..()
@@ -1379,14 +1394,14 @@
 					/obj/item/clothing/mask/cigarette/rollie/cannabis=1,
 					/obj/item/clothing/mask/cigarette/rollie/nicotine=1,
 					/mob/living/simple_animal/butterfly=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/chicken=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/mirespider/angry=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab/cabbit=1,
+					/obj/item/reagent_containers/glass/bottle=1,
+					/obj/item/natural/bone=1,
+					/obj/item/reagent_containers/glass/cup/wooden=1,
 					/mob/living/simple_animal/hostile/rogue/skeleton=1,
 					/mob/living/simple_animal/pet/familiar/cat_black=1,
 					/obj/item/lovepotion=1,
 					/obj/item/bomb=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/direbear=1,
+					/obj/item/natural/fur=1,
 					/mob/living/simple_animal/hostile/retaliate/rogue/spider=1,
 					/mob/living/simple_animal/hostile/retaliate/rogue/wolf=1,
 					/obj/item/clothing/shoes/roguetown/simpleshoes/buckle=1,
@@ -1407,7 +1422,12 @@
 					/obj/item/roguecoin/gold=1,
 					/obj/item/reagent_containers/food/snacks/rogue/berrycakeslice/poison=1,
 					/obj/item/reagent_containers/glass/bottle/rogue/beer=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/wolf_undead=1))
+					/obj/item/reagent_containers/glass/bottle/rogue/berrypoison = 1,
+					/obj/item/natural/poo/cow = 1,
+					/obj/item/kitchen/spoon/iron = 1,
+					/obj/item/kitchen/fork/gold = 1,
+					/obj/item/dice/d6 = 1,
+					/obj/item/clothing/under/roguetown/trou/leather=1))
 	loot_replenish()
 	pixel_x += rand(-3,3)
 	return ..()
@@ -1424,14 +1444,14 @@
 					/obj/item/clothing/mask/cigarette/rollie/cannabis=1,
 					/obj/item/clothing/mask/cigarette/rollie/nicotine=1,
 					/mob/living/simple_animal/butterfly=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/chicken=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/mirespider/angry=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab/cabbit=1,
+					/obj/item/reagent_containers/glass/bottle=1,
+					/obj/item/natural/bone=1,
+					/obj/item/reagent_containers/glass/cup/wooden=1,
 					/mob/living/simple_animal/hostile/rogue/skeleton=1,
 					/mob/living/simple_animal/pet/familiar/cat_black=1,
 					/obj/item/lovepotion=1,
 					/obj/item/bomb=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/direbear=1,
+					/obj/item/natural/fur=1,
 					/mob/living/simple_animal/hostile/retaliate/rogue/spider=1,
 					/mob/living/simple_animal/hostile/retaliate/rogue/wolf=1,
 					/obj/item/clothing/shoes/roguetown/simpleshoes/buckle=1,
@@ -1452,7 +1472,12 @@
 					/obj/item/roguecoin/gold=1,
 					/obj/item/reagent_containers/food/snacks/rogue/berrycakeslice/poison=1,
 					/obj/item/reagent_containers/glass/bottle/rogue/beer=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/wolf_undead=1))
+					/obj/item/reagent_containers/glass/bottle/rogue/berrypoison = 1,
+					/obj/item/natural/poo/cow = 1,
+					/obj/item/kitchen/spoon/iron = 1,
+					/obj/item/kitchen/fork/gold = 1,
+					/obj/item/dice/d6 = 1,
+					/obj/item/clothing/under/roguetown/trou/leather=1))
 	loot_replenish()
 	pixel_x += rand(-3,3)
 	return ..()
@@ -1468,10 +1493,7 @@
 		bushtype = pickweight(list(/obj/item/reagent_containers/food/snacks/grown/berries/rogue=1,
 					/obj/item/reagent_containers/food/snacks/grown/berries/rogue/poison=1,
 					/obj/item/reagent_containers/food/snacks/grown/fruit/blackberry=1,
-					/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/direbear=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/goat=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/wolf=1))
+					/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry=1))
 	loot_replenish()
 	pixel_x += rand(-3,3)
 	return ..()
@@ -1487,10 +1509,7 @@
 		bushtype = pickweight(list(/obj/item/reagent_containers/food/snacks/grown/berries/rogue=1,
 					/obj/item/reagent_containers/food/snacks/grown/berries/rogue/poison=1,
 					/obj/item/reagent_containers/food/snacks/grown/fruit/blackberry=1,
-					/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/direbear=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/goat=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/wolf=1))
+					/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry=1))
 	loot_replenish()
 	pixel_x += rand(-3,3)
 	return ..()
@@ -1506,10 +1525,7 @@
 		bushtype = pickweight(list(/obj/item/reagent_containers/food/snacks/grown/berries/rogue=1,
 					/obj/item/reagent_containers/food/snacks/grown/berries/rogue/poison=1,
 					/obj/item/reagent_containers/food/snacks/grown/fruit/blackberry=1,
-					/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/direbear=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/goat=1,
-					/mob/living/simple_animal/hostile/retaliate/rogue/wolf=1))
+					/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry=1))
 	loot_replenish()
 	pixel_x += rand(-3,3)
 	return ..()
@@ -1583,6 +1599,32 @@
 
 /obj/structure/flora/roguegrass/cold/update_icon()
 	icon_state = "grasscold[rand(1, 6)]"
+
+
+/obj/structure/flora/roguegrass/blood
+	name = "grass"
+	desc = "Green, soft, and lively."
+	icon = 'icons/roguetown/misc/foliage.dmi'
+	icon_state = "bloodgrass1"
+	attacked_sound = "plantcross"
+	destroy_sound = "plantcross"
+	max_integrity = 2
+	plane = GAME_PLANE
+	blade_dulling = DULLING_CUT
+	debris = list(/obj/item/natural/fibers = 1)
+
+
+/obj/structure/flora/roguegrass/blood/spark_act()
+	fire_act()
+
+/obj/structure/flora/roguegrass/blood/Initialize()
+	update_icon()
+	AddComponent(/datum/component/roguegrass)
+	. = ..()
+
+/obj/structure/flora/roguegrass/blood/update_icon()
+	icon_state = "bloodgrass[rand(1, 6)]"
+
 
 /turf/open/lava/acid/cold
 	name = "concentrated refrigerant"
@@ -1865,5 +1907,30 @@
 	icon_state = "lighttree[rand(1, 3)]"
 
 /obj/structure/flora/roguetree/swamptreelight/burn()
+	new /obj/structure/flora/roguetree/pine/dead(get_turf(src))
+	qdel(src)
+
+
+/obj/structure/flora/roguetree/wintertreelight
+	name = "winter light tree"
+	icon = 'icons/roguetown/alizeria/winterflora64x96.dmi'
+	icon_state = "lighttree1"
+	desc = ""
+	pixel_x = -24
+	density = 0
+	max_integrity = 100
+	static_debris = list(/obj/item/grown/log/tree = 2)
+	stump_type = null
+	light_outer_range = 3
+	light_inner_range = 1
+	light_power = 2
+	light_color = "#36acc9"
+	opacity = 0
+
+/obj/structure/flora/roguetree/wintertreelight/Initialize()
+	. = ..()
+	icon_state = "lighttree[rand(1, 3)]"
+
+/obj/structure/flora/roguetree/wintertreelight/burn()
 	new /obj/structure/flora/roguetree/pine/dead(get_turf(src))
 	qdel(src)

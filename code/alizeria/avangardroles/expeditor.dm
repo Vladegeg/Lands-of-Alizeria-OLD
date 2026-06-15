@@ -24,6 +24,7 @@
 		/datum/advclass/expeditor/dumbass,
 		/datum/advclass/expeditor/warlock,
 		/datum/advclass/expeditor/stranger,
+		/datum/advclass/expeditor/rejected,
 	)
 
 /datum/outfit/job/expeditor/pre_equip(mob/living/carbon/human/H)
@@ -240,7 +241,7 @@
 	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/special
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants1
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/reagent_containers/food/snacks/rogue/ration = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/reagent_containers/food/snacks/rogue/ration = 1, /obj/item/ritechalk = 1)
 
 	if(should_wear_femme_clothes(H))
 		head = /obj/item/clothing/head/flowers/poppy
@@ -356,3 +357,60 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/rogue/ration = 1)
+
+////////////////////////////////////////////////////////////
+/datum/advclass/expeditor/rejected
+	name = "Rejected"
+	tutorial = "Пускай мир и постепенно уходит от поклонения каким-либо богам, ты же - так не считал. Возможно ты слишком яро проповедовал на улице, либо просто не понравился какому-то знатному господину, так или иначе - ты был сослан в экспедицию не по своей воле."
+	outfit = /datum/outfit/job/expeditor/rejected
+	category_tags = list(CTAG_EXPEDITOR)
+	allowed_patrons = ALL_DIVINE_PATRONS
+	var/church_favor = 0
+	traits_applied = list(TRAIT_ARCYNE_T1, TRAIT_RITUALIST, TRAIT_CLERGY)
+	subclass_stats = list(
+		STATKEY_PER = 1,
+		STATKEY_LCK = 2,
+		STATKEY_CON = -1,
+		STATKEY_END = -1,
+		STATKEY_SPD = 2,
+		STATKEY_INT = 1,
+		STATKEY_STR = -2,
+	)
+	subclass_spellpoints = 4
+	subclass_skills = list(
+		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
+		/datum/skill/craft/carpentry = SKILL_LEVEL_NOVICE,
+		/datum/skill/craft/masonry = SKILL_LEVEL_NOVICE,
+		/datum/skill/craft/cooking = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/labor/fishing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/magic/holy = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/sewing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/alchemy = SKILL_LEVEL_APPRENTICE,
+	)
+
+/datum/outfit/job/expeditor/rejected/pre_equip(mob/living/carbon/human/H)
+	..()
+	head = /obj/item/clothing/head/roguetown/roguehood/psydon/confessor
+	backl = /obj/item/storage/backpack/rogue/satchel
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/qaba
+	neck = /obj/item/clothing/neck/roguetown/psicross/wood
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
+	gloves = /obj/item/clothing/gloves/roguetown/angle
+	beltr = /obj/item/rogueweapon/mace/cudgel
+	belt = /obj/item/storage/belt/rogue/leather
+	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+	shoes = /obj/item/clothing/shoes/roguetown/boots
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/rogue/ration = 1, /obj/item/ritechalk = 1)
+
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.grant_miracles(H, cleric_tier = 2, passive_gain = 1, start_maxed = FALSE, devotion_limit = 250)
+	H.miracle_points = max(H.miracle_points, 8)

@@ -47,6 +47,21 @@
 		/obj/item/clothing/ring/gold = 1,
 		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,
 	)
+	coldfishloot = list(
+		/obj/item/reagent_containers/food/snacks/fish/carp = 200,
+		/obj/item/reagent_containers/food/snacks/fish/sunny = 305,
+		/obj/item/reagent_containers/food/snacks/fish/salmon = 210,
+		/obj/item/reagent_containers/food/snacks/fish/eel = 160,
+		/obj/item/grown/log/tree/stick = 3,
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
+		/obj/item/natural/cloth = 1,
+		/obj/item/ammo_casing/caseless/rogue/arrow = 1,
+		/obj/item/clothing/ring/gold = 1,
+		/obj/item/reagent_containers/food/snacks/smallrat = 1, //That's not a fish...?
+		/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue = 1,
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 20,
+	)
 	// This is super trimmed down from the ratwood list to focus entirely on shellfishes
 	cageloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/oyster = 214,
@@ -310,7 +325,7 @@
 		"embedded_fall_chance" = 0,
 		"embedded_bloodloss"= 0,
 		"embedded_ignore_throwspeed_threshold" = TRUE,
-		"embedded_unsafe_removal_pain_multiplier" = 0, 
+		"embedded_unsafe_removal_pain_multiplier" = 0,
 	) // the humble cheele is gentle. so gentle.
 
 /obj/item/natural/worms/leech/cheele/attack_self(mob/user)

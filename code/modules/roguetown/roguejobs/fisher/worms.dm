@@ -5,7 +5,8 @@
 	var/list/seafishloot = null
 	var/list/mudfishloot = null
 	var/list/fishloot = null
-	var/list/cageloot = null	
+	var/list/cageloot = null
+	var/list/coldfishloot = null
 
 /obj/item/natural/worms
 	name = "worm"
@@ -28,8 +29,8 @@
 		/obj/item/clothing/ring/gold = 1,
 		/obj/item/reagent_containers/food/snacks/smallrat = 1, //That's not a fish...?
 		/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
-		/obj/item/reagent_containers/glass/bottle/rogue = 1,	
-		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 20,			
+		/obj/item/reagent_containers/glass/bottle/rogue = 1,
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 20,
 	)
 	seafishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/cod = 190,
@@ -46,16 +47,31 @@
 		/obj/item/clothing/ring/gold = 1,
 		/obj/item/reagent_containers/food/snacks/smallrat = 1, //That's not a fish...?
 		/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
-		/obj/item/reagent_containers/glass/bottle/rogue = 1,	
+		/obj/item/reagent_containers/glass/bottle/rogue = 1,
 		/mob/living/carbon/human/species/goblin/npc/sea = 25,
 		/mob/living/simple_animal/hostile/rogue/deepone = 30,
-		/mob/living/simple_animal/hostile/rogue/deepone/spit = 30,			
+		/mob/living/simple_animal/hostile/rogue/deepone/spit = 30,
 	)
 	mudfishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/mudskipper = 200,
 		/obj/item/natural/worms/leech = 50,
 		/obj/item/clothing/ring/gold = 1,
-		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,				
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,
+	)
+	coldfishloot = list(
+		/obj/item/reagent_containers/food/snacks/fish/carp = 225,
+		/obj/item/reagent_containers/food/snacks/fish/sunny = 325,
+		/obj/item/reagent_containers/food/snacks/fish/salmon = 190,
+		/obj/item/reagent_containers/food/snacks/fish/eel = 140,
+		/obj/item/grown/log/tree/stick = 3,
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
+		/obj/item/natural/cloth = 1,
+		/obj/item/ammo_casing/caseless/rogue/arrow = 1,
+		/obj/item/clothing/ring/gold = 1,
+		/obj/item/reagent_containers/food/snacks/smallrat = 1, //That's not a fish...?
+		/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue = 1,
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 20,
 	)
 	// This is super trimmed down from the ratwood list to focus entirely on shellfishes
 	cageloot = list(
@@ -65,7 +81,7 @@
 		/obj/item/reagent_containers/food/snacks/fish/shrimp = 214,
 		/obj/item/reagent_containers/food/snacks/fish/crab = 214,
 		/obj/item/reagent_containers/food/snacks/fish/lobster = 214,
-	)	
+	)
 	drop_sound = 'sound/foley/dropsound/food_drop.ogg'
 	var/amt = 1
 
@@ -88,7 +104,7 @@
 		/obj/item/reagent_containers/food/snacks/smallrat = 1, //That's not a fish...?
 		/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue = 1,
-		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 20,				
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 20,
 	)
 	seafishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/cod = 230,
@@ -106,17 +122,17 @@
 		/obj/item/clothing/ring/gold = 1,
 		/obj/item/reagent_containers/food/snacks/smallrat = 1, //That's not a fish...?
 		/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
-		/obj/item/reagent_containers/glass/bottle/rogue = 1,		
+		/obj/item/reagent_containers/glass/bottle/rogue = 1,
 		/mob/living/carbon/human/species/goblin/npc/sea = 25,
 		/mob/living/simple_animal/hostile/rogue/deepone = 30,
-		/mob/living/simple_animal/hostile/rogue/deepone/spit = 30,		
+		/mob/living/simple_animal/hostile/rogue/deepone/spit = 30,
 	)
 	mudfishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/mudskipper = 200,
 		/obj/item/natural/worms/leech = 50,
 		/obj/item/clothing/ring/gold = 1,
-		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,				
-	)	
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,
+	)
 /obj/item/natural/worms/grubs/attack_right(mob/user)
 	return
 

@@ -26,16 +26,16 @@
 						/obj/item/reagent_containers/food/snacks/fat = 1,
 						/obj/item/natural/hide = 2,
 						/obj/item/natural/bundle/bone/full = 1,
-						/obj/item/alch/sinew = 3, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 2
 						)
 	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
 						/obj/item/reagent_containers/food/snacks/fat = 2,
 						/obj/item/natural/hide = 4,
 						/obj/item/natural/bundle/bone/full = 1,
-						/obj/item/alch/sinew = 3, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 2,
 						/obj/item/natural/head/saiga = 1)
 	base_intents = list(/datum/intent/simple/headbutt/saiga)
@@ -101,6 +101,136 @@
 	can_buckle = FALSE
 	aggressive = 1
 	base_intents = list(/datum/intent/simple/headbutt/saiga)
+
+
+//////////////////////////////////////////////////
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/doe
+	name = "doe"
+	STASPD = 15
+	STACON = 10
+	STASTR = 13
+	health = 180
+	maxHealth = 180
+	tame_chance = 10
+	bonus_tame_chance = 5
+	pixel_x = -6
+	tame = FALSE
+	icon = 'icons/roguetown/mob/monster/saiga.dmi'
+	icon_state = "doe"
+	icon_living = "doe"
+	icon_dead = "doe_dead"
+	ai_controller = /datum/ai_controller/cabbit
+	botched_butcher_results = list(
+								/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
+								/obj/item/natural/bone = 2,
+								/obj/item/alch/sinew = 1,
+								)
+	butcher_results = list(
+						/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 4,
+						/obj/item/reagent_containers/food/snacks/fat = 2,
+						/obj/item/natural/hide = 2,
+						/obj/item/natural/bundle/bone/full = 1,
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 2
+						)
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 4,
+						/obj/item/reagent_containers/food/snacks/fat = 3,
+						/obj/item/natural/hide = 4,
+						/obj/item/natural/bundle/bone/full = 1,
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 2)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/deer
+	name = "deer"
+	STASPD = 15
+	STACON = 10
+	STASTR = 15
+	health = 220
+	maxHealth = 220
+	gender = MALE
+	icon = 'icons/roguetown/mob/monster/saiga.dmi'
+	icon_state = "deer"
+	icon_living = "deer"
+	icon_dead = "deer_dead"
+	melee_damage_lower = 15
+	melee_damage_upper = 30
+	aggressive = 1
+	tame = FALSE
+	ai_controller = /datum/ai_controller/cabbit
+	botched_butcher_results = list(
+								/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
+								/obj/item/natural/bone = 2,
+								/obj/item/alch/sinew = 1,
+								)
+	butcher_results = list(
+						/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 4,
+						/obj/item/reagent_containers/food/snacks/fat = 2,
+						/obj/item/natural/hide = 2,
+						/obj/item/natural/bundle/bone/full = 1,
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 2
+						)
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 4,
+						/obj/item/reagent_containers/food/snacks/fat = 3,
+						/obj/item/natural/hide = 4,
+						/obj/item/natural/bundle/bone/full = 1,
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 2)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/doe/find_food()
+	..()
+	var/obj/structure/vine/SV = locate(/obj/structure/vine) in loc
+	if(SV)
+		SV.eat(src)
+		food = max(food + 30, 100)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/deer/find_food()
+	..()
+	var/obj/structure/vine/SV = locate(/obj/structure/vine) in loc
+	if(SV)
+		SV.eat(src)
+		food = max(food + 30, 100)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/deer/taunted(mob/user)
+	emote("aggro")
+	Retaliate()
+	GiveTarget(user)
+	return
+
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/deer/get_sound(input)
+	switch(input)
+		if("aggro")
+			return pick('sound/vo/mobs/saiga/attack (1).ogg','sound/vo/mobs/saiga/attack (2).ogg')
+		if("pain")
+			return pick('sound/vo/mobs/saiga/pain (1).ogg','sound/vo/mobs/saiga/pain (2).ogg','sound/vo/mobs/saiga/pain (3).ogg')
+		if("death")
+			return pick('sound/vo/mobs/saiga/death (1).ogg','sound/vo/mobs/saiga/death (2).ogg')
+		if("idle")
+			return pick('sound/vo/mobs/saiga/idle (1).ogg','sound/vo/mobs/saiga/idle (2).ogg','sound/vo/mobs/saiga/idle (3).ogg','sound/vo/mobs/saiga/idle (4).ogg','sound/vo/mobs/saiga/idle (5).ogg','sound/vo/mobs/saiga/idle (6).ogg','sound/vo/mobs/saiga/idle (7).ogg')
+
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/deer/simple_limb_hit(zone)
+	if(!zone)
+		return ""
+	switch(zone)
+		if(BODY_ZONE_HEAD, BODY_ZONE_PRECISE_R_EYE, BODY_ZONE_PRECISE_L_EYE, BODY_ZONE_PRECISE_SKULL, BODY_ZONE_PRECISE_EARS)
+			return "head"
+		if(BODY_ZONE_PRECISE_NOSE, BODY_ZONE_PRECISE_MOUTH)
+			return "snout"
+		if(BODY_ZONE_PRECISE_NECK)
+			return "neck"
+		if(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM, BODY_ZONE_PRECISE_L_HAND, BODY_ZONE_PRECISE_R_HAND)
+			return "foreleg"
+		if(BODY_ZONE_R_LEG, BODY_ZONE_L_LEG, BODY_ZONE_PRECISE_L_FOOT, BODY_ZONE_PRECISE_R_FOOT)
+			return "leg"
+		if(BODY_ZONE_PRECISE_STOMACH)
+			return "stomach"
+	return ..()
+
+//////////////////////////////////////////////////
 
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck
 	name = "saiga buck"
@@ -225,7 +355,7 @@
 	RegisterSignal(M, COMSIG_MOB_APPLY_DAMGE, PROC_REF(check_sprint_dismount))
 	if(!has_buckled_mobs())
 		RegisterSignal(src, COMSIG_MOB_APPLY_DAMGE, PROC_REF(check_sprint_dismount))
-	
+
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/post_unbuckle_mob(mob/living/M)
 	. = ..()
 	UnregisterSignal(M, COMSIG_MOB_APPLY_DAMGE, PROC_REF(check_sprint_dismount))

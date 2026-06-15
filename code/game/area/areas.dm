@@ -94,6 +94,7 @@
 	var/soundenv = 0
 
 	var/first_time_text = null
+	var/blood_custom = FALSE
 
 	var/list/firedoors
 	var/list/cameras
@@ -420,8 +421,13 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	mind.areas_entered += A.first_time_text
 	var/atom/movable/screen/area_text/T = new()
 	client.screen += T
+
+	var/text_color = "#3dabf0"  // Цвет по умолчанию (синий)
+	if(A.blood_custom)
+		text_color = "#de2b2b"  // Красный цвет для кровавых зон
+
 	T.maptext = {"<span style='vertical-align:top; text-align:center;
-				color: #3dabf0; font-size: 250%;
+				color: [text_color]; font-size: 250%;
 				text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 				font-family: "CCSpellcaster", "Gabriela";'>[A.first_time_text]</span>"}
 	T.maptext_width = 205

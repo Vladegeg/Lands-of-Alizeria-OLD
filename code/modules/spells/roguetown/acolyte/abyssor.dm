@@ -97,6 +97,7 @@
 	var/frwt = list(/turf/open/water/river, /turf/open/water/cleanshallow, /turf/open/water/pond)
 	var/salwt = list(/turf/open/water/ocean, /turf/open/water/ocean/deep)
 	var/mud = list(/turf/open/water/swamp, /turf/open/water/swamp/deep)
+	var/coldwt = list(/turf/open/water/coldwater)
 	var/list/freshfishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/carp = 225,
 		/obj/item/reagent_containers/food/snacks/fish/sunny = 325,
@@ -122,7 +123,15 @@
 	var/list/mudfishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/mudskipper = 200,
 		/obj/item/natural/worms/leech = 50,
-		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,				
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,
+	)
+	var/list/coldfishloot = list(
+		/obj/item/reagent_containers/food/snacks/fish/carp = 225,
+		/obj/item/reagent_containers/food/snacks/fish/sunny = 325,
+		/obj/item/reagent_containers/food/snacks/fish/salmon = 190,
+		/obj/item/reagent_containers/food/snacks/fish/eel = 140,
+		/obj/item/reagent_containers/food/snacks/smallrat = 1, //funny
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 20,
 	)
 
 /obj/effect/proc_holder/spell/invoked/aquatic_compulsion/cast(list/targets, mob/user = usr)
@@ -139,6 +148,9 @@
 			success = TRUE
 		if(T.type in mud)
 			A = pickweight(mudfishloot)
+			success = TRUE
+		if(T.type in coldwt)
+			A = pickweight(coldfishloot)
 			success = TRUE
 		if(success)
 			var/atom/movable/AF = new A(T)

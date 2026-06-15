@@ -4,6 +4,7 @@
 	/turf/open/water/ocean,\
 	/turf/open/water/ocean/deep,\
 	/turf/open/water/swamp,\
+	/turf/open/water/coldwater,\
 	/turf/open/water/swamp/deep )
 
 //Valid spots for fishing add to it if there's more.

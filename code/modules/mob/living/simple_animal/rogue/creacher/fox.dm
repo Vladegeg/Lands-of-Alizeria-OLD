@@ -1,8 +1,8 @@
 //Subtype of wolf, but non-hostile until attacked instead of default hostile.
 /mob/living/simple_animal/hostile/retaliate/rogue/fox
 	icon = 'icons/roguetown/mob/monster/fox.dmi'
-	name = "venard"
-	desc = "A majestic beast of Dendor's realm, hopping through the local fauna."
+	name = "fox"
+	desc = "Обычная рыжая лиса."
 	icon_state = "fox"
 	icon_living = "fox"
 	icon_dead = "fox_dead"
@@ -18,17 +18,17 @@
 	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1, /obj/item/alch/viscera = 1, /obj/item/natural/bone = 3)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 2,
 						/obj/item/natural/hide = 1,
-						/obj/item/alch/sinew = 2, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 1,
-						/obj/item/natural/fur/fox = 1, 
+						/obj/item/natural/fur/fox = 1,
 						/obj/item/natural/bone = 4)
-	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 2,
 						/obj/item/natural/hide = 2,
-						/obj/item/alch/sinew = 2, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 1,
-						/obj/item/natural/fur/fox = 2, 
+						/obj/item/natural/fur/fox = 2,
 						/obj/item/natural/bone = 4,
 						/obj/item/natural/head/fox = 1)
 	faction = list("wolfs", "zombie")
@@ -44,17 +44,17 @@
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
-	food_type = list(/obj/item/reagent_containers/food/snacks, 
-					//obj/item/bodypart, 
-					//obj/item/organ, 
-					/obj/item/natural/bone, 
+	food_type = list(/obj/item/reagent_containers/food/snacks,
+					//obj/item/bodypart,
+					//obj/item/organ,
+					/obj/item/natural/bone,
 					/obj/item/natural/hide)
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
 	pooptype = null
 	STACON = 6
 	STASTR = 5
 	STASPD = 13	//Fast
-	ai_controller = null
+	ai_controller = /datum/ai_controller/cabbit
 	simple_detect_bonus = 20
 	deaggroprob = 0
 	defprob = 40
@@ -63,9 +63,9 @@
 	food = 0
 	attack_sound = list('sound/vo/mobs/vw/attack (1).ogg','sound/vo/mobs/vw/attack (2).ogg','sound/vo/mobs/vw/attack (3).ogg','sound/vo/mobs/vw/attack (4).ogg')
 	dodgetime = 30
-	aggressive = 1
+	aggressive = 0
 	eat_forever = TRUE
-	
+
 
 /obj/effect/decal/remains/fox
 	name = "remains"

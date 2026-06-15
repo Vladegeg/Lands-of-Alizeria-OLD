@@ -261,7 +261,7 @@
     antimagic_allowed = TRUE
     recharge_time = 1800
     ignore_cockblock = TRUE
-    invocation = "RAVOX, WITNESS ME!!!"
+    invocation = "ПУСТЬ МОЯ СМЕРТЬ ЗАБЕРЁТ МОЮ ЖИЗНЬ И ПОЗОР!!!"
     invocation_type = "shout"
     sound = 'sound/magic/axedance.ogg'
 

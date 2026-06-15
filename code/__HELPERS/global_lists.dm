@@ -71,9 +71,6 @@
 		GLOB.loadout_items[path] = loadout_item
 
 	// Triumph Loadout items
-	for (var/path in subtypesof(/datum/triumph_loadout_item))
-		var/datum/triumph_loadout_item/triumph_loadout_item = new path()
-		GLOB.triumph_loadout_items[path] = triumph_loadout_item
 
 	// Inquisition Hermes list
 	for (var/path in subtypesof(/datum/inqports))

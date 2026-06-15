@@ -105,7 +105,12 @@ GLOBAL_LIST_INIT(landowner_whitelist, list(
 	"sheetofseaweed",
 	"sneeek",
 	"sarov",
-	"patapoiiika",
+	"secretivedemon",
+	"kimesik",
+	"irontom",
+	"karaspidoras",
+	"floggy",
+	"gear5",
 ))
 
 /datum/job/roguetown/lord/special_job_check(mob/dead/new_player/player)

@@ -854,3 +854,23 @@
 /obj/structure/flora/roguetree/pinesnow/dead/Initialize()
 	. = ..()
 	icon_state = "dead[rand(1, 3)]"
+
+/obj/structure/flora/roguetree/pineblood
+	name = "blood tree"
+	icon_state = "pineblood1"
+	desc = "Странное дерево с кровавым налётом. Растёт исключительно на землях Ализерии, из-за чего частенько вызывает интерес у начинающих биологов."
+	icon = 'icons/obj/flora/pines.dmi'
+	pixel_w = -24
+	density = 0
+	opacity = 0
+	max_integrity = 100
+	static_debris = list(/obj/item/grown/log/tree = 4)
+	stump_type = null
+
+/obj/structure/flora/roguetree/pineblood/Initialize()
+	. = ..()
+	icon_state = "pineblood[rand(1, 6)]"
+
+/obj/structure/flora/roguetree/pineblood/burn()
+	new /obj/structure/flora/roguetree/pinesnow/dead(get_turf(src))
+	qdel(src)
